@@ -310,6 +310,10 @@ p {
     margin-inline: 0;
 }
 
+.mobile-rent-cta {
+    display: none;
+}
+
 .nav-link,
 .nav-dropdown-trigger {
     display: inline-flex;
@@ -1394,6 +1398,26 @@ p {
         justify-content: space-between;
         width: 100%;
         padding: 11px 14px;
+    }
+
+    .mobile-rent-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: 8px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: var(--primary);
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .mobile-rent-cta:hover,
+    .mobile-rent-cta:focus-visible {
+        background: var(--secondary);
+        color: #fff;
     }
 
     .nav-link.active::after,
