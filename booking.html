@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00A6A6">
+    <meta name="description"
+        content="Request a surfboard rental from Wave&Craft. Choose your board, plan your session, and send your request by email.">
+    <title>Book your board | Wave&Craft</title>
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booking.css">
+    <script src="booking.js" defer></script>
+</head>
+
+<body>
+    <main class="booking-shell">
+        <div class="preferences" role="group" aria-label="Display preferences">
+            <button class="direction-button" id="directionToggle" type="button" aria-label="Switch to right-to-left" title="Switch to right-to-left">RTL</button>
+            <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.463.402.807a6.25 6.25 0 0 0 8.268 8.268c.344-.215.829-.004.803.397"/></svg></button>
+        </div>
+        <div class="booking-layout">
+            <section class="intro" aria-labelledby="bookingHeading">
+                <a class="brand" href="index.html" aria-label="Wave&Craft home">
+                    <span class="logo-wrap"><span class="logo-fallback" aria-hidden="true">≋</span><img id="brandLogo" class="brand-logo"
+                            src="./images/logo.png" width="60" height="60" alt=""></span>
+                    <span class="brand-text"><strong><span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span></strong><small>Surf Shop &amp; Rental</small></span>
+                </a>
+                <p class="eyebrow">LESS PLANNING. MORE WAVES.</p>
+                <h1 id="bookingHeading">Your board.<br>Your day.<br><span>Your adventure.</span></h1>
+                <p class="intro-copy">Find your shape, pick your session, and leave the rest to us. Your next wave
+                    starts here.</p>
+                <figure class="board-visual">
+                    <span class="visual-label">THE WAVE&amp;CRAFT COLLECTION</span>
+                    <img id="boardImage" width="560" height="440" alt="Illustration of a teal surfboard"
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 440'%3E%3Cellipse cx='280' cy='390' rx='100' ry='12' fill='%23002529' opacity='.1'/%3E%3Cg transform='rotate(18 280 220)'%3E%3Cpath d='M280 25C190 100 206 317 249 401L280 387L311 401C354 317 370 100 280 25Z' fill='%2300A6A6' stroke='%23132126' stroke-width='3'/%3E%3Cpath d='M280 31V387' stroke='%23faf9f6' stroke-width='4'/%3E%3Cpath d='M224 255H336L328 286H232Z' fill='%23FF694A'/%3E%3C/g%3E%3C/svg%3E">
+                    <figcaption>
+                        <div><small id="visualType">EVERYDAY FUNBOARD</small><strong id="visualName">Coastal
+                                Cruiser</strong></div><span class="visual-mark" aria-hidden="true">↗</span>
+                    </figcaption>
+                </figure>
+                <p class="image-note">Board illustration. Actual equipment may vary.</p>
+                <div class="reassurance"><span>01 <strong>Choose your board</strong></span><span>02 <strong>Send your
+                            request</strong></span><span>03 <strong>Hear from our team</strong></span></div>
+            </section>
+
+            <section class="booking-card" aria-labelledby="formHeading">
+                <div class="card-heading">
+                    <p class="eyebrow">RENT &amp; RIDE</p><span class="pill">No payment today</span>
+                </div>
+                <h2 id="formHeading">Plan your session</h2>
+                <p class="muted">A few details, then you're one step closer to the ocean.</p>
+                <noscript>
+                    <p class="error">Enable JavaScript to calculate your estimate and prepare an email, or contact
+                        hello@wavecraft.com directly.</p>
+                </noscript>
+                <form id="bookingForm" novalidate>
+                    <fieldset>
+                        <legend><span>01</span> Choose your board</legend>
+                        <label for="board">Board type <span aria-hidden="true">*</span></label>
+                        <select id="board" name="board" required aria-describedby="boardDescription boardRate">
+                            <option value="cruiser">Coastal Cruiser — Everyday Funboard · 7′2″</option>
+                            <option value="runner">Ocean Runner — Performance Shortboard · 6′0″</option>
+                            <option value="explorer">Tide Explorer — Classic Longboard · 9′0″</option>
+                            <option value="seeker">Wave Seeker — Versatile Hybrid · 6′8″</option>
+                        </select>
+                        <p id="boardDescription" class="field-note">Easy paddling and a smooth ride across changing
+                            conditions.</p>
+                        <p id="boardRate" class="rate">From $59.00 USD / 24 hours</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend><span>02</span> Make time for the tide</legend>
+                        <p id="timeZone" class="field-note">Dates and times use your device's local time zone.</p>
+                        <div class="date-grid">
+                            <div><label for="pickupDate">Pickup date *</label><input id="pickupDate" name="pickupDate"
+                                    type="date" required aria-describedby="dateError"></div>
+                            <div><label for="pickupTime">Pickup time *</label><input id="pickupTime" name="pickupTime"
+                                    type="time" required aria-describedby="dateError"></div>
+                            <div><label for="returnDate">Return date *</label><input id="returnDate" name="returnDate"
+                                    type="date" required aria-describedby="dateError"></div>
+                            <div><label for="returnTime">Return time *</label><input id="returnTime" name="returnTime"
+                                    type="time" required aria-describedby="dateError"></div>
+                        </div>
+                        <p id="dateError" class="error" aria-live="polite"></p>
+                        <p class="duration-line">Rental duration <strong id="duration" aria-live="polite">Choose your
+                                dates and times</strong></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend><span>03</span> Your details</legend>
+                        <div class="customer-fields">
+                            <div><label for="fullName">Full name *</label><input id="fullName" name="fullName"
+                                    autocomplete="name" placeholder="Your full name" required maxlength="100"></div>
+                            <div><label for="email">Email address *</label><input id="email" name="email" type="email"
+                                    autocomplete="email" placeholder="you@example.com" required maxlength="150"
+                                    dir="ltr"></div>
+                            <div><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel"
+                                    autocomplete="tel" placeholder="Include your country code" required maxlength="40"
+                                    dir="ltr" aria-describedby="phoneHint">
+                                <p id="phoneHint" class="field-note">Use 7–15 digits; spaces, +, brackets, and hyphens
+                                    are welcome.</p>
+                            </div>
+                            <div><label for="notes">Anything we should know? <span
+                                        class="optional">(optional)</span></label><textarea id="notes" name="notes"
+                                    rows="3" maxlength="500"
+                                    placeholder="Experience level, sizing requests, or a question for our crew…"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <section class="summary" aria-labelledby="summaryHeading">
+                        <h3 id="summaryHeading">Your session at a glance</h3>
+                        <dl>
+                            <div>
+                                <dt>Board</dt>
+                                <dd id="summaryBoard">Coastal Cruiser · 7′2″</dd>
+                            </div>
+                            <div>
+                                <dt>Pickup</dt>
+                                <dd id="summaryPickup">Not selected</dd>
+                            </div>
+                            <div>
+                                <dt>Return</dt>
+                                <dd id="summaryReturn">Not selected</dd>
+                            </div>
+                            <div>
+                                <dt>Duration</dt>
+                                <dd id="summaryDuration">—</dd>
+                            </div>
+                            <div>
+                                <dt>Starting rate</dt>
+                                <dd id="summaryRate">$59.00 USD / 24 hours</dd>
+                            </div>
+                            <div>
+                                <dt>Billable periods</dt>
+                                <dd id="summaryPeriods">—</dd>
+                            </div>
+                        </dl>
+                        <div class="total"><span>Estimated total<small>USD · equipment rental only</small></span><output
+                                id="total" aria-live="polite">—</output></div>
+                        <p class="field-note">Estimate uses the advertised full-day starting rate for each started
+                            24-hour period, including shorter sessions. Board, size, availability, final price, taxes,
+                            deposits, and any half-day or multi-day offers will be confirmed by our team.</p>
+                    </section>
+                    <p id="formError" class="error" role="alert"></p>
+                    <button class="request-button" id="requestButton" type="submit" disabled>Request Booking <span
+                            aria-hidden="true">↗</span></button>
+                    <p class="submit-note">Opens a prepared email to <a
+                            href="mailto:hello@wavecraft.com">hello@wavecraft.com</a>. Review and send it to request
+                        your board. Your booking is only confirmed when our team replies.</p>
+                </form>
+                <section id="confirmation" class="confirmation" hidden tabindex="-1"
+                    aria-labelledby="confirmationHeading">
+                    <span class="eyebrow">ONE MORE STEP</span>
+                    <h3 id="confirmationHeading">Your request is ready to send.</h3>
+                    <p>Your email app should open. Send the prepared message to hello@wavecraft.com. Nothing has been
+                        sent or reserved by this page.</p>
+                    <p>If no email app opened, copy the draft below into your email service.</p>
+                    <label for="emailDraft">Prepared email</label><textarea id="emailDraft" rows="9" readonly
+                        dir="auto"></textarea>
+                    <div class="draft-actions"><a id="reopenEmail" href="mailto:hello@wavecraft.com">Open email again
+                            ↗</a><button id="copyDraft" type="button">Copy draft</button></div>
+                    <p id="copyStatus" role="status"></p>
+                </section>
+                <a class="back-link" href="rentals.html"><span aria-hidden="true">←</span> Back to Rentals</a>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

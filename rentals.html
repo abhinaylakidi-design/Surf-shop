@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rentals | Wave&amp;Craft</title>
+
+    <meta name="description"
+        content="Find your rental surfboard at Wave&Craft. Explore familiar shapes, flexible rental plans, and simple pickup.">
+    <meta name="theme-color" content="#00A6A6">
+
+    <link rel="icon" type="image/png" href="./images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="rentals.css">
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="rentals.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60">
+
+                <span class="brand-text">
+                    <strong>
+                        <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                    </strong>
+                    <small>Surf Shop &amp; Rental</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger" id="homeDropdownButton" type="button" aria-expanded="false"
+                        aria-controls="homeDropdownMenu">
+                        Home
+                        <i data-lucide="chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdownMenu">
+                        <a href="index.html">Home</a>
+
+                        <a href="home2.html">
+                            <span>Home 2</span>
+                            <small>Premium</small>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link">About</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="rentals.html" class="nav-link active" aria-current="page">Rentals</a>
+                <a href="lessons.html" class="nav-link">Lessons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="direction-button" id="directionToggle" type="button" aria-label="Switch to right-to-left"
+                    title="Change text direction">
+                    RTL
+                </button>
+
+                <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode"
+                    title="Toggle theme">
+                    <i data-lucide="moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="booking.html" class="login-button">
+                    Rent a Board
+                </a>
+
+                <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i data-lucide="menu" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- 01 / Full viewport hero -->
+        <section class="rent-hero" aria-labelledby="rent-heading">
+            <div class="container rent-hero-grid">
+                <div class="rent-hero-copy reveal">
+                    <div class="wc-hero-eyebrow">
+                        <span aria-hidden="true"></span>
+                        WAVE&amp;CRAFT — SURF SHOP &amp; RENTALS
+                    </div>
+                    <h1 id="rent-heading">Travel light.<br> <span>Ride freely.</span></h1>
+                    <p>Your favourite shapes. Yours for the day.<br>Find your board and make time for the ocean.</p>
+                    <div class="rent-actions"><a href="#fleet" class="button button-primary">Find your rental <span
+                                aria-hidden="true">↗</span></a><a href="#plans" class="button button-outline">Explore
+                            plans <span aria-hidden="true">↓</span></a></div>
+                    <div class="hero-meta"><span>PREMIUM BOARDS</span><span>FLEXIBLE RENTALS</span><span>LOCAL
+                            KNOW-HOW</span></div>
+                </div>
+                <div class="hero-studio reveal">
+                    <div class="studio-top"><span>LESS TO CARRY.</span><span>MORE TO DISCOVER.</span></div>
+                    <div class="hero-boards">
+                        <div class="r-board long" style="--board-color:#e3c487" aria-hidden="true"><span>W/C</span>
+                        </div>
+                        <div class="r-board short" style="--board-color:#ef927c" aria-hidden="true"><span>W/C</span>
+                        </div>
+                        <div class="r-board fun" style="--board-color:#77b4ac" aria-hidden="true"><span>W/C</span></div>
+                    </div>
+                    <div class="studio-bottom">
+                        <div><small>THE RENTAL EDIT</small><strong>Good gear. Great days.</strong></div><a href="#fleet"
+                            aria-label="Explore the rental fleet">↗</a>
+                    </div><span class="studio-orbit" aria-hidden="true"></span>
+                </div>
+            </div>
+        </section>
+        <!-- 02 / Rental fleet -->
+        <section class="section fleet-section" id="fleet" aria-labelledby="fleet-heading">
+            <div class="container">
+                <div class="r-section-head reveal">
+                    <div><span class="eyebrow">02 / FIND YOUR SHAPE</span>
+                        <h2 class="section-heading" id="fleet-heading">Same great boards.<br><span>A little more
+                                freedom.</span></h2>
+                    </div>
+                    <p>Meet familiar favourites from our shop collection, ready for your next rental session.</p>
+                </div>
+                <div class="fleet-filters" role="group" aria-label="Filter rental boards"><button type="button"
+                        data-filter="all" aria-pressed="true">All boards</button><button type="button"
+                        data-filter="beginner" aria-pressed="false">First waves</button><button type="button"
+                        data-filter="everyday" aria-pressed="false">Easy cruising</button><button type="button"
+                        data-filter="performance" aria-pressed="false">Performance</button></div>
+                <p class="fleet-count" id="fleetCount" role="status">4 boards to explore</p>
+                <div class="fleet-grid">
+                    <article class="fleet-card reveal" data-level="beginner">
+                        <div class="fleet-art"><span class="fleet-index">01 / THE RENTAL FLEET</span>
+                            <div class="r-board soft" style="--board-color:#eacb75" aria-hidden="true"><span>W/C</span>
+                            </div><span class="fleet-level">beginner</span>
+                        </div>
+                        <div class="fleet-copy"><small>Soft top · 8′0″</small>
+                            <h3>First Light</h3>
+                            <p>A forgiving first-wave favourite.</p><a href="#plans" class="text-link"
+                                data-board="First Light">Choose this board <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="fleet-card reveal" data-level="everyday">
+                        <div class="fleet-art"><span class="fleet-index">02 / THE RENTAL FLEET</span>
+                            <div class="r-board fun" style="--board-color:#70aaa4" aria-hidden="true"><span>W/C</span>
+                            </div><span class="fleet-level">everyday</span>
+                        </div>
+                        <div class="fleet-copy"><small>Funboard · 7′2″</small>
+                            <h3>Coastal Cruiser</h3>
+                            <p>A smooth everyday ride.</p><a href="#plans" class="text-link"
+                                data-board="Coastal Cruiser">Choose this board <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="fleet-card reveal" data-level="everyday">
+                        <div class="fleet-art"><span class="fleet-index">03 / THE RENTAL FLEET</span>
+                            <div class="r-board long" style="--board-color:#d8b77c" aria-hidden="true"><span>W/C</span>
+                            </div><span class="fleet-level">everyday</span>
+                        </div>
+                        <div class="fleet-copy"><small>Longboard · 9′2″</small>
+                            <h3>Tide Explorer</h3>
+                            <p>Timeless glide and easy flow.</p><a href="#plans" class="text-link"
+                                data-board="Tide Explorer">Choose this board <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="fleet-card reveal" data-level="performance">
+                        <div class="fleet-art"><span class="fleet-index">04 / THE RENTAL FLEET</span>
+                            <div class="r-board short" style="--board-color:#ef927c" aria-hidden="true"><span>W/C</span>
+                            </div><span class="fleet-level">performance</span>
+                        </div>
+                        <div class="fleet-copy"><small>Shortboard · 5′10″</small>
+                            <h3>Ocean Runner</h3>
+                            <p>Sharp turns. Clean lines.</p><a href="#plans" class="text-link"
+                                data-board="Ocean Runner">Choose this board <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- 03 / Flexible plans -->
+        <section class="section plans-section" id="plans" aria-labelledby="plans-heading">
+            <div class="container r-split">
+                <div class="r-copy reveal"><span class="eyebrow">03 / YOUR DAY. YOUR PACE.</span>
+                    <h2 class="section-heading" id="plans-heading">A quick dip.<br>A full day.<br><span>A coastal
+                            escape.</span></h2>
+                    <p>Choose the time that fits your trip. We’ll help you match the board to your experience and the
+                        waves.</p><a href="contact.html" class="text-link">Talk to the surf crew <span
+                            aria-hidden="true">↗</span></a>
+                    <div class="selected-board" role="status"><span>YOUR BOARD</span><strong id="selectedBoard">Find
+                            your favourite in the fleet</strong></div>
+                </div>
+                <div class="plan-stack">
+                    <article class="plan-card reveal"><span class="plan-number">01</span>
+                        <div><small>HALF DAY</small>
+                            <h3>Morning Flow</h3>
+                            <p>A little ocean time, a lot of good feeling.</p>
+                        </div><a class="plan-link" href="booking.html?plan=half-day"
+                            aria-label="Book Morning Flow half-day rental">Book ↗</a>
+                    </article>
+                    <article class="plan-card plan-featured reveal"><span class="plan-number">02</span>
+                        <div><small>FULL DAY / MAKE A DAY OF IT</small>
+                            <h3>Full Day Freedom</h3>
+                            <p>Room for one more wave. And one more.</p>
+                        </div><a class="plan-link" href="booking.html?plan=full-day"
+                            aria-label="Book Full Day Freedom rental">Book ↗</a>
+                    </article>
+                    <article class="plan-card reveal"><span class="plan-number">03</span>
+                        <div><small>MULTI-DAY</small>
+                            <h3>Extended Escape</h3>
+                            <p>Keep your favourite shape a little longer.</p>
+                        </div><a class="plan-link" href="booking.html?plan=multi-day"
+                            aria-label="Book Extended Escape multi-day rental">Book ↗</a>
+                    </article>
+                    <p class="plan-note">Check dates, rates, and board availability when booking.</p>
+                </div>
+            </div>
+        </section>
+        <!-- 04 / Pickup process -->
+        <section class="section process-section" aria-labelledby="process-heading">
+            <div class="container r-split">
+                <div class="process-visual reveal"><img
+                        src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+                        alt="Surfer catching a wave on a sunlit ocean" loading="lazy">
+                    <div class="process-caption"><span>PACK LESS.</span><strong>Bring your ocean
+                            mind.</strong><span>WE’LL HELP WITH THE BOARD. ↗</span></div>
+                </div>
+                <div class="r-copy reveal"><span class="eyebrow">04 / FROM SHORE TO SURF</span>
+                    <h2 class="section-heading" id="process-heading">Less planning.<br><span>More paddling.</span></h2>
+                    <p>A simple start to your next session.</p>
+                    <ol class="process-steps">
+                        <li><span>01</span>
+                            <div>
+                                <h3>Find your ride</h3>
+                                <p>Choose a shape and rental plan that feel right.</p>
+                            </div>
+                        </li>
+                        <li><span>02</span>
+                            <div>
+                                <h3>Meet the crew</h3>
+                                <p>Confirm your fit, pickup details, and equipment with our team.</p>
+                            </div>
+                        </li>
+                        <li><span>03</span>
+                            <div>
+                                <h3>Make it your day</h3>
+                                <p>Enjoy your session and return at your agreed time.</p>
+                            </div>
+                        </li>
+                    </ol><a href="booking.html" class="text-link">Plan your next session <span
+                            aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- 05 / Rental questions -->
+        <section class="section faq-section" aria-labelledby="faq-heading">
+            <div class="container r-split">
+                <div class="r-copy reveal"><span class="eyebrow">05 / BEFORE YOU PADDLE OUT</span>
+                    <h2 class="section-heading" id="faq-heading">A few details.<br><span>A better day.</span></h2>
+                    <p>New to rentals? Start here, or let our crew help you find your fit.</p><a href="contact.html"
+                        class="text-link">Ask us anything <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="faq-list reveal">
+                    <details open>
+                        <summary>Which board should I choose?</summary>
+                        <p>For first waves, explore First Light. For easy cruising, try Coastal Cruiser or Tide
+                            Explorer. Confident surfers can start with Ocean Runner. Our crew can help refine the fit.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Can I rent if I’m new to surfing?</summary>
+                        <p>Start with a stable soft top and talk to our crew about your experience. A lesson is a great
+                            way to build confidence before your first independent session. <a
+                                href="lessons.html">Explore lessons ↗</a></p>
+                    </details>
+                    <details>
+                        <summary>What should I bring for pickup?</summary>
+                        <p>Bring your booking details and your beach essentials. Confirm any identification, deposit,
+                            and equipment requirements with the team before you arrive.</p>
+                    </details>
+                    <details>
+                        <summary>Can I keep my board for longer?</summary>
+                        <p>Ask the crew before your agreed return time. Extensions depend on board availability and the
+                            applicable rental rate.</p>
+                    </details>
+                    <details>
+                        <summary>Love the board? Can I buy one?</summary>
+                        <p>Explore the same shapes in our shop collection and find a board for your everyday sessions.
+                            <a href="shop.html">Shop surfboards ↗</a></p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- 06 / Same compact CTA layout as home -->
+        <section class="final-cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="final-cta-card reveal"><span class="final-cta-eyebrow">YOUR NEXT SESSION STARTS HERE</span>
+                    <h2 id="cta-heading">Good Gear. <span>Your Next Wave.</span></h2>
+                    <p>Rent your favourite shape. Make the ocean yours.</p>
+                    <div class="final-cta-actions"><a href="booking.html" class="button button-primary">Book a Rental
+                            <span aria-hidden="true">↗</span></a><a href="shop.html" class="button button-outline">Shop
+                            Surfboards <span aria-hidden="true">↗</span></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                    <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60" loading="lazy">
+
+                    <span class="brand-text">
+                        <strong>
+                            <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                        </strong>
+                        <small>Surf Shop &amp; Rental</small>
+                    </span>
+                </a>
+
+                <p>
+                    Quality surfboards, flexible rentals, and friendly guidance
+                    for your next ocean adventure.
+                </p>
+
+                <div class="footer-social-icons" aria-label="Social links">
+                    <!-- Replace # with your social profile URLs. -->
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.4L6.45 22H3.34l7.24-8.28L2.8 2h6.4l4.43 5.86L18.9 2Zm-1.1 17.75h1.73L8.28 4.14H6.42L17.8 19.75Z" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:hello@wavecraft.com" class="social-icon" aria-label="Email">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <!-- Replace # with your business WhatsApp URL. -->
+                    <a href="#" class="social-icon" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.5 0 .16 5.34 .16 11.9c0 2.1.55 4.15 1.59 5.96L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.23-6.17-3.44-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.71.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-navigation">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="services.html">Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+
+                    <div class="footer-links">
+                        <a href="shop.html">All Boards</a>
+                        <a href="shop.html">Shortboards</a>
+                        <a href="shop.html">Longboards</a>
+                        <a href="shop.html">Funboards</a>
+                        <a href="shop.html">Fish Boards</a>
+                        <a href="shop.html">Soft Tops</a>
+                    </div>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                            <span>123 Beach Road,<br>Surf City</span>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" aria-hidden="true"></i>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <a href="mailto:hello@wavecraft.com">
+                                hello@wavecraft.com
+                            </a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="clock-3" aria-hidden="true"></i>
+                            <span>Mon – Sun<br>8:00 AM – 7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>
+                © <span id="footerYear">2026</span> Wave&amp;Craft.
+                All rights reserved.
+            </span>
+
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

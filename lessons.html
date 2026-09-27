@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Surf Lessons | Wave&amp;Craft</title>
+
+    <meta name="description"
+        content="Find your wave with Wave&Craft beginner surf lessons, intermediate sessions, and private coaching.">
+    <meta name="theme-color" content="#00A6A6">
+
+    <link rel="icon" type="image/png" href="./images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="lessons.css">
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="lessons.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60">
+
+                <span class="brand-text">
+                    <strong>
+                        <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                    </strong>
+                    <small>Surf Shop &amp; Rental</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger" id="homeDropdownButton" type="button" aria-expanded="false"
+                        aria-controls="homeDropdownMenu">
+                        Home
+                        <i data-lucide="chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdownMenu">
+                        <a href="index.html">Home</a>
+
+                        <a href="home2.html">
+                            <span>Home 2</span>
+                            <small>Premium</small>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link">About</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="rentals.html" class="nav-link">Rentals</a>
+                <a href="lessons.html" class="nav-link active" aria-current="page">Lessons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="direction-button" id="directionToggle" type="button" aria-label="Switch to right-to-left"
+                    title="Change text direction">
+                    RTL
+                </button>
+
+                <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode"
+                    title="Toggle theme">
+                    <i data-lucide="moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="booking.html" class="login-button">
+                    Rent a Board
+                </a>
+
+                <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i data-lucide="menu" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="main-content">
+        <!-- 01 / Full-viewport editorial hero -->
+        <section class="learn-hero" aria-labelledby="heroHeading">
+            <div class="container learn-hero-grid">
+                <div class="learn-hero-copy" data-reveal>
+                    <div class="wc-hero-eyebrow">
+                        <span aria-hidden="true"></span>
+                        WAVE&amp;CRAFT — SURF SHOP &amp; RENTALS
+                    </div>
+                    <span class="lesson-label">THE SURF SCHOOL / ALL LEVELS</span>
+                    <h1 id="heroHeading">A little courage.<br>A whole new<br><em>kind of freedom.</em></h1>
+                    <p>From your first paddle to your next clean turn. Find your feet, your confidence, and your wave.
+                    </p>
+                    <div class="learn-actions"><a href="#lesson-options" class="button">Find Your Lesson <span
+                                aria-hidden="true">↗</span></a><a href="#session" class="hero-secondary">How it works
+                            <span aria-hidden="true">↓</span></a></div>
+                    <div class="hero-footnote"><span class="wave-mark" aria-hidden="true">≈</span><span>LESS PRESSURE.
+                            MORE PROGRESS.<br><small>Your ocean story starts here.</small></span></div>
+                </div>
+                <div class="learn-hero-visual" data-reveal>
+                    <img src="./images/hero 9.jpg"
+                        alt="Surfer riding a breaking ocean wave" fetchpriority="high">
+                    <div class="image-shade"></div><span class="visual-topline">LEARN / RIDE / REPEAT</span>
+                    <div class="hero-image-caption"><span>ONE WAVE AT A TIME</span><strong>Start small.<br>Feel
+                            something big.</strong></div>
+                    <a class="round-link" href="#lesson-options" aria-label="Explore surf lessons">↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 / Lesson options -->
+        <section class="section lesson-options" id="lesson-options" aria-labelledby="optionsHeading">
+            <div class="container">
+                <div class="lesson-section-top" data-reveal>
+                    <div><span class="eyebrow">01 / FIND YOUR FLOW</span>
+                        <h2 class="section-heading" id="optionsHeading">Every surfer starts<br><span>somewhere.</span>
+                        </h2>
+                    </div>
+                    <p>Choose your starting point. We’ll help you build the skills for what comes next.</p>
+                </div>
+                <div class="program-grid">
+                    <article class="program-card" data-reveal>
+                        <div class="program-photo"><img
+                                src="./images/pt 2.jpg"
+                                alt="Ocean surf rolling toward the shore" loading="lazy"><span class="program-tag">START
+                                HERE</span></div>
+                        <div class="program-body"><span class="eyebrow">01 / BEGINNER</span>
+                            <h3>Your first wave</h3>
+                            <p>Get comfortable with your board, practise your pop-up, and discover the joy of your first
+                                ride.</p>
+                            <ul>
+                                <li>Ocean awareness &amp; board basics</li>
+                                <li>Paddling, balance &amp; standing up</li>
+                            </ul><a href="booking.html?lesson=beginner" class="button">Explore Beginner <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="program-card" data-reveal>
+                        <div class="program-photo"><img
+                                src="./images/surf 12.jpg"
+                                alt="Surfer carving across an ocean wave" loading="lazy"><span class="program-tag">BUILD
+                                YOUR SKILLS</span></div>
+                        <div class="program-body"><span class="eyebrow">02 / INTERMEDIATE</span>
+                            <h3>Find your rhythm</h3>
+                            <p>Make more of every session with better wave selection, smoother turns, and purposeful
+                                practice.</p>
+                            <ul>
+                                <li>Positioning &amp; timing your takeoff</li>
+                                <li>Direction, control &amp; wave reading</li>
+                            </ul><a href="booking.html?lesson=intermediate" class="button">Explore Intermediate <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="program-card" data-reveal>
+                        <div class="program-photo"><img
+                                src="./images/pt 1.jpg"
+                                alt="Sunlit waves along the coastline" loading="lazy"><span class="program-tag">YOUR
+                                PACE</span></div>
+                        <div class="program-body"><span class="eyebrow">03 / PRIVATE COACHING</span>
+                            <h3>Make it personal</h3>
+                            <p>Give your goals the full focus they deserve with individual guidance shaped around your
+                                surfing.</p>
+                            <ul>
+                                <li>A session built around your level</li>
+                                <li>Focused feedback &amp; next steps</li>
+                            </ul><a href="booking.html?lesson=private" class="button">Explore Private <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 / Session flow -->
+        <section class="section session-section" id="session" aria-labelledby="sessionHeading">
+            <div class="container aligned-split">
+                <div class="split-copy" data-reveal><span class="eyebrow">02 / FROM SHORE TO SURF</span>
+                    <h2 class="section-heading" id="sessionHeading">Small steps.<br><span>Real progress.</span></h2>
+                    <p>No need to have it all figured out. Each session brings the essentials together, one simple step
+                        at a time.</p><a href="booking.html" class="button">Plan Your Session <span
+                            aria-hidden="true">↗</span></a>
+                </div>
+                <ol class="session-steps">
+                    <li data-reveal><span class="step-number">01</span>
+                        <div>
+                            <h3>Meet. Check. Get ready.</h3>
+                            <p>Share your experience and goals, then talk through the conditions and equipment.</p>
+                        </div><i data-lucide="sun" aria-hidden="true"></i>
+                    </li>
+                    <li data-reveal><span class="step-number">02</span>
+                        <div>
+                            <h3>Build your beach basics.</h3>
+                            <p>Practise your stance, pop-up, and board handling before heading into the water.</p>
+                        </div><i data-lucide="footprints" aria-hidden="true"></i>
+                    </li>
+                    <li data-reveal><span class="step-number">03</span>
+                        <div>
+                            <h3>Paddle out. Put it together.</h3>
+                            <p>Take your skills into the surf with guidance, encouragement, and time to practise.</p>
+                        </div><i data-lucide="waves" aria-hidden="true"></i>
+                    </li>
+                    <li data-reveal><span class="step-number">04</span>
+                        <div>
+                            <h3>Take your next step.</h3>
+                            <p>Reflect on your session and leave a clear focus for your next paddle out.</p>
+                        </div><i data-lucide="move-up-right" aria-hidden="true"></i>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 04 / Coaching approach -->
+        <section class="section coaching-section" aria-labelledby="coachingHeading">
+            <div class="container aligned-split">
+                <div class="split-copy" data-reveal><span class="eyebrow">03 / GOOD GUIDANCE. GOOD WAVES.</span>
+                    <h2 class="section-heading" id="coachingHeading">More confidence.<br><span>Every time you
+                            paddle.</span></h2>
+                    <p>Clear instruction, thoughtful feedback, and space to enjoy the learning. That’s the
+                        Wave&amp;Craft approach.</p>
+                    <div class="coaching-points">
+                        <div><i data-lucide="compass" aria-hidden="true"></i>
+                            <div>
+                                <h3>Guidance that meets you where you are</h3>
+                                <p>Build from your current ability and your own goals.</p>
+                            </div>
+                        </div>
+                        <div><i data-lucide="waves" aria-hidden="true"></i>
+                            <div>
+                                <h3>Learn to understand the ocean</h3>
+                                <p>Develop awareness alongside your technique.</p>
+                            </div>
+                        </div>
+                        <div><i data-lucide="smile" aria-hidden="true"></i>
+                            <div>
+                                <h3>Room to learn. Reasons to smile.</h3>
+                                <p>Celebrate the little wins that keep you coming back.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="coaching-visual" data-reveal><img
+                        src="https://images.unsplash.com/photo-1455729552865-3658a5d39692?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                        alt="Wide ocean waves and a peaceful coastal horizon" loading="lazy">
+                    <figcaption><span class="eyebrow">THE BEST PART?</span><strong>That “I did it”
+                            feeling.</strong><span>Keep learning. Keep paddling.</span></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 05 / Frequently asked questions -->
+        <section class="section lesson-faq" aria-labelledby="faqHeading">
+            <div class="container aligned-split">
+                <div class="split-copy" data-reveal><span class="eyebrow">04 / BEFORE YOU PADDLE OUT</span>
+                    <h2 class="section-heading" id="faqHeading">A few questions.<br><span>A little clarity.</span></h2>
+                    <p>Getting ready for your first session? Start here, or talk to us about what you need.</p><a
+                        href="contact.html" class="text-link">Ask the Team <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="faq-list" data-reveal>
+                    <details open>
+                        <summary>Do I need any surfing experience?<span aria-hidden="true">+</span></summary>
+                        <p>No surfing experience is needed for beginner lessons. Let the team know your swimming ability
+                            and comfort in the ocean before booking.</p>
+                    </details>
+                    <details>
+                        <summary>Which lesson should I choose?<span aria-hidden="true">+</span></summary>
+                        <p>Start with beginner lessons if you’re new to surfing. Choose intermediate to develop turns
+                            and wave selection, or private coaching for a more individual focus.</p>
+                    </details>
+                    <details>
+                        <summary>What should I bring?<span aria-hidden="true">+</span></summary>
+                        <p>Bring swimwear, a towel, sunscreen, and drinking water. Confirm equipment, wetsuit needs, and
+                            the meeting point with the team before your session.</p>
+                    </details>
+                    <details>
+                        <summary>What if the conditions change?<span aria-hidden="true">+</span></summary>
+                        <p>Surf sessions depend on ocean and weather conditions. Contact the team to confirm your
+                            session and discuss the options if conditions aren’t suitable.</p>
+                    </details>
+                    <details>
+                        <summary>Can you help me choose my own board?<span aria-hidden="true">+</span></summary>
+                        <p>Yes. Tell us about your progress and the waves you want to ride, and explore the shop for a
+                            board that suits your next step.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 / Same CTA layout as the home page; concise shop content -->
+        <section class="final-cta-section" aria-labelledby="ctaHeading">
+            <div class="container">
+                <div class="final-cta-card" data-reveal><span class="final-cta-eyebrow">YOUR NEXT WAVE STARTS
+                        HERE</span>
+                    <h2 id="ctaHeading">Find Your Board. <span>Make It Yours.</span></h2>
+                    <p>Explore boards and gear for your next session.</p>
+                    <div class="final-cta-actions"><a href="shop.html" class="button button-primary">Shop Surfboards
+                            <span aria-hidden="true">↗</span></a><a href="contact.html"
+                            class="button button-outline">Find My Fit <span aria-hidden="true">↗</span></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                    <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60" loading="lazy">
+
+                    <span class="brand-text">
+                        <strong>
+                            <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                        </strong>
+                        <small>Surf Shop &amp; Rental</small>
+                    </span>
+                </a>
+
+                <p>
+                    Quality surfboards, flexible rentals, and friendly guidance
+                    for your next ocean adventure.
+                </p>
+
+                <div class="footer-social-icons" aria-label="Social links">
+                    <!-- Replace # with your social profile URLs. -->
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.4L6.45 22H3.34l7.24-8.28L2.8 2h6.4l4.43 5.86L18.9 2Zm-1.1 17.75h1.73L8.28 4.14H6.42L17.8 19.75Z" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:hello@wavecraft.com" class="social-icon" aria-label="Email">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <!-- Replace # with your business WhatsApp URL. -->
+                    <a href="#" class="social-icon" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.5 0 .16 5.34 .16 11.9c0 2.1.55 4.15 1.59 5.96L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.23-6.17-3.44-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.71.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-navigation">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="services.html">Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+
+                    <div class="footer-links">
+                        <a href="shop.html">All Boards</a>
+                        <a href="shop.html">Shortboards</a>
+                        <a href="shop.html">Longboards</a>
+                        <a href="shop.html">Funboards</a>
+                        <a href="shop.html">Fish Boards</a>
+                        <a href="shop.html">Soft Tops</a>
+                    </div>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                            <span>123 Beach Road,<br>Surf City</span>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" aria-hidden="true"></i>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <a href="mailto:hello@wavecraft.com">
+                                hello@wavecraft.com
+                            </a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="clock-3" aria-hidden="true"></i>
+                            <span>Mon – Sun<br>8:00 AM – 7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>
+                © <span id="footerYear">2026</span> Wave&amp;Craft.
+                All rights reserved.
+            </span>
+
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

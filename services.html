@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Wave&amp;Craft</title>
+    <meta name="description" content="Explore Wave&amp;Craft surf services, equipment and session planning.">
+    <meta name="theme-color" content="#00a6a6">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+    <script src="services.js" defer></script>
+</head>
+
+<body><a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60">
+
+                <span class="brand-text">
+                    <strong>
+                        <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                    </strong>
+                    <small>Surf Shop &amp; Rental</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger" id="homeDropdownButton" type="button" aria-expanded="false"
+                        aria-controls="homeDropdownMenu">
+                        Home
+                        <i data-lucide="chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdownMenu">
+                        <a href="index.html">Home</a>
+
+                        <a href="home2.html">
+                            <span>Home 2</span>
+                            <small>Premium</small>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link">About</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="services.html" class="nav-link active" aria-current="page">Services</a>
+                <a href="rentals.html" class="nav-link">Rentals</a>
+                <a href="lessons.html" class="nav-link">Lessons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="direction-button" id="directionToggle" type="button" aria-label="Switch to right-to-left"
+                    title="Change text direction">
+                    RTL
+                </button>
+
+                <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode"
+                    title="Toggle theme">
+                    <i data-lucide="moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="booking.html" class="login-button">
+                    Rent a Board
+                </a>
+
+                <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i data-lucide="menu" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="wc-hero service-hero" aria-labelledby="heroHeading">
+            <div class="wc-hero-bg"><img
+                    src="./images/hero 6.jpg"
+                    alt="Ocean surf along the coastline" width="1800" height="1200" fetchpriority="high"
+                    data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85">
+            </div>
+            <div class="wc-hero-overlay" aria-hidden="true"></div>
+            <div class="container service-hero-inner">
+                <div class="wc-hero-content">
+                    <div class="wc-hero-eyebrow"><span aria-hidden="true"></span>WAVE&amp;CRAFT — SURF SHOP &amp;
+                        RENTALS</div>
+                    <h1 id="heroHeading">More Than a Board.<span>Everything for Your Wave.</span></h1>
+                    <p class="wc-hero-description">From your first paddle to your next breakthrough, explore surf
+                        services built around your experience, your goals, and your time by the ocean.</p>
+                    <div class="wc-hero-actions"><a class="button button-primary" href="#services">Explore Services<span
+                                aria-hidden="true">↗</span></a><a class="button button-outline" href="contact.html">Plan
+                            Your Session<span aria-hidden="true">↗</span></a></div>
+                </div>
+                <div class="hero-side" aria-hidden="true"><span>WAVE&amp;CRAFT / THE SERVICES</span>
+                    <div class="ocean-ring">W<span>&amp;</span>C</div>
+                    <p>EQUIPMENT · GUIDANCE · EXPERIENCE</p>
+                </div>
+            </div>
+        </section>
+        <section class="section collection" id="services">
+            <div class="container">
+                <div class="collection-heading">
+                    <div><span class="eyebrow">OUR SERVICES / 01—06</span>
+                        <h2 class="section-heading">A better day.<br><span>From shore to surf.</span></h2>
+                    </div>
+                    <p>Find your starting point. Explore the equipment, guidance, and considered details that make a
+                        session your own.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card"><a class="service-photo"
+                            href="service-details.html?service=surfboard-rentals" tabindex="-1" aria-hidden="true"><img
+                                src="./images/board 10.jpg"
+                                alt="" width="800" height="620" loading="lazy"
+                                data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"><span
+                                class="photo-number">01</span></a>
+                        <div class="service-copy"><span class="eyebrow">EQUIPMENT / EXPLORE</span>
+                            <h3>Surfboard Rentals</h3>
+                            <p>Travel light and find a board that fits the way you want to surf. Talk through your
+                                experience, the conditions, and your plans before choosing your rental.</p><a
+                                class="service-link" href="service-details.html?service=surfboard-rentals"
+                                aria-label="View Surfboard Rentals">View Service <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card"><a class="service-photo"
+                            href="service-details.html?service=beginner-lessons" tabindex="-1" aria-hidden="true"><img
+                                src="./images/pt 1.jpg"
+                                alt="" width="800" height="620" loading="lazy"
+                                data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"><span
+                                class="photo-number">02</span></a>
+                        <div class="service-copy"><span class="eyebrow">LEARN / FIRST WAVES</span>
+                            <h3>Beginner Surf Lessons</h3>
+                            <p>Get familiar with the board, the beach, and the basics. Build an understanding of
+                                paddling, balance, and wave awareness at a pace that makes sense for you.</p><a
+                                class="service-link" href="service-details.html?service=beginner-lessons"
+                                aria-label="View Beginner Surf Lessons">View Service <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card"><a class="service-photo"
+                            href="service-details.html?service=private-coaching" tabindex="-1" aria-hidden="true"><img
+                                src="./images/pt 2.jpg"
+                                alt="" width="800" height="620" loading="lazy"
+                                data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"><span
+                                class="photo-number">03</span></a>
+                        <div class="service-copy"><span class="eyebrow">PROGRESS / PERSONAL FOCUS</span>
+                            <h3>Private Surf Coaching</h3>
+                            <p>Give your surfing a clear direction with a conversation about the skills you want to
+                                develop and a session planned around your current experience.</p><a class="service-link"
+                                href="service-details.html?service=private-coaching"
+                                aria-label="View Private Surf Coaching">View Service <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card"><a class="service-photo"
+                            href="service-details.html?service=board-repairs" tabindex="-1" aria-hidden="true"><img
+                                src="./images/board 9.jpg"
+                                alt="" width="800" height="620" loading="lazy"
+                                data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"><span
+                                class="photo-number">04</span></a>
+                        <div class="service-copy"><span class="eyebrow">CARE / PROPOSED SERVICE</span>
+                            <h3>Board Repairs & Care</h3>
+                            <p>Discuss damage, maintenance, and the next step for your board. This proposed service is
+                                subject to confirmation of repair capability and availability.</p><a
+                                class="service-link" href="service-details.html?service=board-repairs"
+                                aria-label="View Board Repairs & Care">View Service <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card"><a class="service-photo"
+                            href="service-details.html?service=guided-sessions" tabindex="-1" aria-hidden="true"><img
+                                src="./images/surf 1.avif"
+                                alt="" width="800" height="620" loading="lazy"
+                                data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"><span
+                                class="photo-number">05</span></a>
+                        <div class="service-copy"><span class="eyebrow">EXPLORE / PROPOSED SERVICE</span>
+                            <h3>Guided Surf Sessions</h3>
+                            <p>Explore the possibility of a locally informed surf session, shaped by your experience and
+                                the conditions. Guide availability and the service scope must be confirmed.</p><a
+                                class="service-link" href="service-details.html?service=guided-sessions"
+                                aria-label="View Guided Surf Sessions">View Service <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card"><a class="service-photo"
+                            href="service-details.html?service=group-experiences" tabindex="-1" aria-hidden="true"><img
+                                src="./images/hero 10.jpg"
+                                alt="" width="800" height="620" loading="lazy"
+                                data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"><span
+                                class="photo-number">06</span></a>
+                        <div class="service-copy"><span class="eyebrow">TOGETHER / PROPOSED SERVICE</span>
+                            <h3>Group Surf Experiences</h3>
+                            <p>Bring your group’s plans to the team and explore a surf experience that accounts for
+                                different starting points. Group formats and availability are subject to confirmation.
+                            </p><a class="service-link" href="service-details.html?service=group-experiences"
+                                aria-label="View Group Surf Experiences">View Service <span
+                                    aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                </div>
+                <p class="editorial-note">Repairs, guided sessions, and group experiences are proposed offerings.
+                    Contact the team to confirm availability and scope.</p>
+            </div>
+        </section>
+        <section class="section pathways">
+            <div class="container pathway-grid">
+                <div class="pathway-visual"><img
+                        src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+                        alt="Surfer finding a line on a wave" width="1000" height="1300" loading="lazy"><span>THERE IS
+                        NO SINGLE WAY TO SURF.</span></div>
+                <div><span class="eyebrow">FIND YOUR STARTING POINT</span>
+                    <h2 class="section-heading">Your Experience.<br>Your Pace.<br><span>Your Wave.</span></h2>
+                    <p>Choose support that meets you where you are—and gives your next session a clear purpose.</p><a
+                        class="pathway" href="service-details.html?service=beginner-lessons"><span>01</span>
+                        <div>
+                            <h3>First-Time Surfers</h3>
+                            <p>Start with board handling, water awareness, and the foundations of a first take-off.
+                                Discuss a beginner lesson before choosing equipment.</p>
+                        </div><span aria-hidden="true">↗</span>
+                    </a><a class="pathway" href="service-details.html?service=private-coaching"><span>02</span>
+                        <div>
+                            <h3>Building Confidence</h3>
+                            <p>Focus on the skill that holds you back. Talk through your paddling, timing, or
+                                positioning and discuss a coaching format.</p>
+                        </div><span aria-hidden="true">↗</span>
+                    </a><a class="pathway" href="service-details.html?service=surfboard-rentals"><span>03</span>
+                        <div>
+                            <h3>Experienced Riders</h3>
+                            <p>Spend time considering your setup and session plans. Explore rental options that
+                                complement the conditions and how you ride.</p>
+                        </div><span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section process">
+            <div class="container"><span class="eyebrow">A SIMPLE START</span>
+                <h2 class="section-heading">Good sessions start<br>with <span>a little planning.</span></h2>
+                <div class="step-grid">
+                    <article class="step"><span class="step-number">01</span>
+                        <h3>Choose Your Service</h3>
+                        <p>Explore the options and choose the support or equipment you want to discuss.</p>
+                    </article>
+                    <article class="step"><span class="step-number">02</span>
+                        <h3>Tell Us Your Experience</h3>
+                        <p>Share your dates, confidence in the water, and what you hope to get from the session.</p>
+                    </article>
+                    <article class="step"><span class="step-number">03</span>
+                        <h3>Confirm the Details</h3>
+                        <p>Agree availability, equipment, costs, meeting arrangements, and applicable terms with the
+                            team.</p>
+                    </article>
+                    <article class="step"><span class="step-number">04</span>
+                        <h3>Meet Us by the Ocean</h3>
+                        <p>Arrive at the confirmed meeting point with the agreed equipment and personal essentials.</p>
+                    </article>
+                </div>
+                <p class="editorial-note">An inquiry starts a conversation. Your arrangements are confirmed separately
+                    by the team.</p>
+            </div>
+        </section>
+        <section class="section faq-section">
+            <div class="container faq-grid">
+                <div><span class="eyebrow">BEFORE YOU HEAD OUT</span>
+                    <h2 class="section-heading">A little clarity.<br><span>A better start.</span></h2>
+                    <p>Good questions make for thoughtful plans. Here are a few things to know before your next session.
+                    </p><a class="service-link" href="contact.html">Ask us something else <span
+                            aria-hidden="true">↗</span></a>
+                </div>
+                <div class="accordion">
+                    <details>
+                        <summary>Which service is suitable for a beginner?<span aria-hidden="true">+</span></summary>
+                        <p>Beginner Surf Lessons are the best place to start the conversation. Share your water
+                            confidence and ask the team to confirm a suitable format and equipment.</p>
+                    </details>
+                    <details>
+                        <summary>How do I choose a rental board?<span aria-hidden="true">+</span></summary>
+                        <p>Tell us what you normally ride, your experience, and your plans. Ask which shapes and sizes
+                            are available before deciding on your setup.</p>
+                    </details>
+                    <details>
+                        <summary>What should I bring?<span aria-hidden="true">+</span></summary>
+                        <p>Ask about equipment inclusions and bring the personal items agreed with the team. Swimwear, a
+                            towel, water, and suitable sun protection are useful starting points.</p>
+                    </details>
+                    <details>
+                        <summary>Can I arrange a private or group session?<span aria-hidden="true">+</span></summary>
+                        <p>Tell the team your preferred dates, goals, and participant numbers. Private and group
+                            arrangements depend on the available format and staffing.</p>
+                    </details>
+                    <details>
+                        <summary>How do ocean conditions affect a session?<span aria-hidden="true">+</span></summary>
+                        <p>Conditions can affect timing, location, or whether a session can go ahead. Confirm how
+                            updates, changes, and cancellations are handled before booking.</p>
+                    </details>
+                    <details>
+                        <summary>How do I ask about repairs?<span aria-hidden="true">+</span></summary>
+                        <p>Send clear photos and a description of your board and damage. Repair services are proposed;
+                            confirm assessment availability and capability with the team.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="final-cta-section">
+            <div class="container">
+                <div class="final-cta-card"><span class="final-cta-eyebrow">YOUR NEXT SESSION STARTS HERE</span>
+                    <h2>Choose Your Experience. <span>Find Your Wave.</span></h2>
+                    <p>Find the equipment, guidance, and support for your next ocean adventure. Let’s build a session
+                        around you.</p>
+                    <div class="final-cta-actions"><a class="button button-primary" href="#services">Explore Our
+                            Services<span aria-hidden="true">↗</span></a><a class="button button-outline"
+                            href="contact.html">Talk to Our Team<span aria-hidden="true">↗</span></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                    <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60" loading="lazy">
+
+                    <span class="brand-text">
+                        <strong>
+                            <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                        </strong>
+                        <small>Surf Shop &amp; Rental</small>
+                    </span>
+                </a>
+
+                <p>
+                    Quality surfboards, flexible rentals, and friendly guidance
+                    for your next ocean adventure.
+                </p>
+
+                <div class="footer-social-icons" aria-label="Social links">
+                    <!-- Replace # with your social profile URLs. -->
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.4L6.45 22H3.34l7.24-8.28L2.8 2h6.4l4.43 5.86L18.9 2Zm-1.1 17.75h1.73L8.28 4.14H6.42L17.8 19.75Z" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:hello@wavecraft.com" class="social-icon" aria-label="Email">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <!-- Replace # with your business WhatsApp URL. -->
+                    <a href="#" class="social-icon" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.5 0 .16 5.34 .16 11.9c0 2.1.55 4.15 1.59 5.96L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.23-6.17-3.44-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.71.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-navigation">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="services.html">Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+
+                    <div class="footer-links">
+                        <a href="shop.html">All Boards</a>
+                        <a href="shop.html">Shortboards</a>
+                        <a href="shop.html">Longboards</a>
+                        <a href="shop.html">Funboards</a>
+                        <a href="shop.html">Fish Boards</a>
+                        <a href="shop.html">Soft Tops</a>
+                    </div>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                            <span>123 Beach Road,<br>Surf City</span>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" aria-hidden="true"></i>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <a href="mailto:hello@wavecraft.com">
+                                hello@wavecraft.com
+                            </a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="clock-3" aria-hidden="true"></i>
+                            <span>Mon – Sun<br>8:00 AM – 7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>
+                © <span id="footerYear">2026</span> Wave&amp;Craft.
+                All rights reserved.
+            </span>
+
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wave&amp;Craft | Surf Shop &amp; Rental</title>
+
+    <meta
+        name="description"
+        content="Wave&Craft surf shop — surfboards, rentals, lessons and coastal good vibes."
+    >
+    <meta name="theme-color" content="#00A6A6">
+
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                <img
+                    class="brand-logo"
+                    src="./images/logo.png" data-fallback="./images/logo.svg"
+                    alt=""
+                    width="60"
+                    height="60"
+                >
+
+                <span class="brand-text">
+                    <strong>
+                        <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                    </strong>
+                    <small>Surf Shop &amp; Rental</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <div class="nav-dropdown">
+                    <button
+                        class="nav-dropdown-trigger"
+                        id="homeDropdownButton"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="homeDropdownMenu"
+                    >
+                        Home
+                        <i data-lucide="chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdownMenu">
+                        <a href="index.html">Home</a>
+
+                        <a href="home2.html">
+                            <span>Home 2</span>
+                            <small>Premium</small>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link">About</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="rentals.html" class="nav-link">Rentals</a>
+                <a href="lessons.html" class="nav-link">Lessons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button
+                    class="direction-button"
+                    id="directionToggle"
+                    type="button"
+                    aria-label="Switch to right-to-left"
+                    title="Change text direction"
+                >
+                    RTL
+                </button>
+
+                <button
+                    class="icon-button"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch to dark mode"
+                    title="Toggle theme"
+                >
+                    <i data-lucide="moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="booking.html" class="login-button">
+                    Rent a Board
+                </a>
+
+                <button
+                    class="mobile-toggle"
+                    id="mobileToggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="mainNav"
+                >
+                    <i data-lucide="menu" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="wc-hero" id="home" aria-labelledby="heroHeading">
+            <div class="wc-hero-bg">
+                <img
+                    src="./images/hero 5.png"
+                    alt="Surfer riding through ocean waves"
+                    fetchpriority="high"
+                    data-fallback="https://images.unsplash.com/photo-1537519646099-335112f65f4f?auto=format&amp;fit=crop&amp;w=2400&amp;q=85"
+                >
+            </div>
+
+            <div class="wc-hero-overlay" aria-hidden="true"></div>
+
+            <div class="container wc-hero-container">
+                <div class="wc-hero-content">
+                    <div class="wc-hero-eyebrow">
+                        <span aria-hidden="true"></span>
+                        WAVE&amp;CRAFT — SURF SHOP &amp; RENTALS
+                    </div>
+
+                    <h1 id="heroHeading">
+                        Ride the Ocean.
+                        <span>Find Your Wave.</span>
+                    </h1>
+
+                    <p class="wc-hero-description">
+                        Premium surfboards, flexible rentals, and expert lessons
+                        designed for every kind of surfer.
+                    </p>
+
+                    <div class="wc-hero-actions">
+                        <a href="shop.html" class="button button-primary">
+                            Shop Surfboards
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="rentals.html" class="button button-outline">
+                            Explore Rentals
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="wc-hero-card">
+                    <img
+                        src="./images/surf 5.jpg"
+                        alt="Surfboard and ocean coastline"
+                        data-fallback="https://images.unsplash.com/photo-1455729552865-3658a5d39692?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                    >
+
+                    <div class="wc-card-content">
+                        <div>
+                            <span class="wc-card-eyebrow">
+                                THE SURF LIFESTYLE
+                            </span>
+
+                            <h2>
+                                Made for
+                                <span>Ocean Minds.</span>
+                            </h2>
+                        </div>
+
+                        <div class="wc-card-bottom">
+                            <span>
+                                RIDE<br>
+                                EXPLORE<br>
+                                REPEAT
+                            </span>
+                            <strong>01</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section section" id="about">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="about-image-frame">
+                        <img
+                            src="https://images.unsplash.com/photo-1537519646099-335112f65f4f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"
+                            alt="Surfer enjoying a wave in the ocean"
+                            loading="lazy"
+                            data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"
+                        >
+                    </div>
+
+                    <div class="image-caption">
+                        <span aria-hidden="true"></span>
+                        THE OCEAN IS YOURS
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">THE WAVE&amp;CRAFT STORY</span>
+
+                    <h2 class="section-heading">
+                        Built Around the
+                        <span>Way You Surf.</span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Wave&amp;Craft brings together carefully selected
+                        surfboards, flexible rentals, and thoughtful instruction
+                        for surfers who want more from every session.
+                    </p>
+
+                    <p>
+                        We believe surfing is more than simply catching a wave.
+                        It is about the equipment beneath your feet, the knowledge
+                        that helps you progress, and the community that makes
+                        every session memorable. Wave&amp;Craft combines quality
+                        equipment with a welcoming surf culture designed to make
+                        the ocean feel accessible to everyone.
+                    </p>
+
+                    <div class="about-features">
+                        <article class="about-feature">
+                            <span class="feature-number">01</span>
+                            <div>
+                                <h3>Curated Equipment</h3>
+                                <p>
+                                    Carefully selected boards and gear for better
+                                    sessions in every kind of wave.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="about-feature">
+                            <span class="feature-number">02</span>
+                            <div>
+                                <h3>Local Surf Knowledge</h3>
+                                <p>
+                                    Practical insight and guidance inspired by
+                                    the places we call home.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="about-feature">
+                            <span class="feature-number">03</span>
+                            <div>
+                                <h3>Made for Every Level</h3>
+                                <p>
+                                    From first-time surfers to experienced riders,
+                                    there is something here for everyone.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <a href="about.html" class="text-link">
+                        Discover Our Story
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOP -->
+        <section class="shop-section section" id="shop">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">THE COLLECTION / 01—04</span>
+
+                    <h2 class="section-heading">
+                        Find the shape for <span>your wave.</span>
+                    </h2>
+
+                    <p>
+                        From your first easy glide to your next sharp turn,
+                        explore boards built for the way you ride.
+                    </p>
+                </div>
+
+                <div class="board-list">
+                    <article class="board-row">
+                        <span class="board-index">01</span>
+
+                        <div class="board-image">
+                            <img data-fallback="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"
+                                src="./images/surf 7.jpg"
+                                alt="Surf scene for the performance shortboard collection"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="board-details">
+                            <span class="board-type">Performance Shortboard</span>
+                            <h3>Ocean Runner</h3>
+                            <p>
+                                Fast response for confident turns and clean lines.
+                            </p>
+                        </div>
+
+                        <div class="board-action">
+                            <strong>$749</strong>
+                            <a href="shop.html" aria-label="View Ocean Runner">
+                                View board <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="board-row">
+                        <span class="board-index">02</span>
+
+                        <div class="board-image">
+                            <img
+                                src="./images/board 7.jpg"
+                                alt="Surf scene for the everyday funboard collection"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="board-details">
+                            <span class="board-type">Everyday Funboard</span>
+                            <h3>Coastal Cruiser</h3>
+                            <p>
+                                Easy paddling and a smooth ride across changing
+                                conditions.
+                            </p>
+                        </div>
+
+                        <div class="board-action">
+                            <strong>$629</strong>
+                            <a href="shop.html" aria-label="View Coastal Cruiser">
+                                View board <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="board-row">
+                        <span class="board-index">03</span>
+
+                        <div class="board-image">
+                            <img data-fallback="https://images.unsplash.com/photo-1537519646099-335112f65f4f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"
+                                src="./images/surf 5.jpg"
+                                alt="Surf scene for the classic longboard collection"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="board-details">
+                            <span class="board-type">Classic Longboard</span>
+                            <h3>Tide Explorer</h3>
+                            <p>
+                                A timeless shape made for glide, balance, and flow.
+                            </p>
+                        </div>
+
+                        <div class="board-action">
+                            <strong>$849</strong>
+                            <a href="shop.html" aria-label="View Tide Explorer">
+                                View board <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="board-row">
+                        <span class="board-index">04</span>
+
+                        <div class="board-image">
+                            <img data-fallback="https://images.unsplash.com/photo-1455729552865-3658a5d39692?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"
+                                src="./images/surf 4.avif"
+                                alt="Surf scene for the versatile hybrid collection"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="board-details">
+                            <span class="board-type">Versatile Hybrid</span>
+                            <h3>Wave Seeker</h3>
+                            <p>
+                                One adaptable board for the days you want to
+                                try it all.
+                            </p>
+                        </div>
+
+                        <div class="board-action">
+                            <strong>$699</strong>
+                            <a href="shop.html" aria-label="View Wave Seeker">
+                                View board <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="shop-bottom">
+                    <span>
+                        YOUR NEXT SESSION STARTS WITH THE RIGHT BOARD.
+                    </span>
+
+                    <a href="shop.html" class="text-link">
+                        Explore all surfboards
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- RENTALS -->
+        <section class="rental-section section" id="rentals">
+            <img
+                class="rental-background"
+                src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&amp;fit=crop&amp;w=1800&amp;q=85"
+                alt=""
+                loading="lazy"
+            >
+
+            <div class="container rental-grid">
+                <div class="rental-intro">
+                    <span class="eyebrow">RENT &amp; RIDE</span>
+
+                    <h2 class="section-heading">
+                        Your Board.<br>
+                        Your Day.<br>
+                        <span>Your Adventure.</span>
+                    </h2>
+
+                    <p>
+                        Choose the right board for your session and spend your
+                        day exploring the coastline without the commitment
+                        of ownership.
+                    </p>
+
+                    <div class="rental-trust">
+                        <span>Clean equipment</span>
+                        <span>Flexible pickup</span>
+                        <span>Boards for every level</span>
+                    </div>
+                </div>
+
+                <div class="rental-panel">
+                    <div class="rental-panel-heading">
+                        <span>CHOOSE YOUR SESSION</span>
+                        <span>WAVE&amp;CRAFT RENTALS</span>
+                    </div>
+
+                    <article class="rental-option">
+                        <span class="rental-number">01</span>
+
+                        <div class="rental-details">
+                            <small>HALF DAY</small>
+                            <h3>Quick Session</h3>
+                            <p>Perfect for a quick surf session.</p>
+                        </div>
+
+                        <div class="rental-price">
+                            <span>FROM</span>
+                            <strong>$39</strong>
+                        </div>
+
+                        <a href="rentals.html" class="rental-button">
+                            Rent a Board <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="rental-option featured">
+                        <span class="rental-number">02</span>
+
+                        <div class="rental-details">
+                            <small>FULL DAY</small>
+                            <h3>Full Day Freedom</h3>
+                            <p>Freedom to explore from sunrise to sunset.</p>
+                        </div>
+
+                        <div class="rental-price">
+                            <span>FROM</span>
+                            <strong>$59</strong>
+                        </div>
+
+                        <a href="rentals.html" class="rental-button">
+                            Rent a Board <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="rental-option">
+                        <span class="rental-number">03</span>
+
+                        <div class="rental-details">
+                            <small>MULTI-DAY</small>
+                            <h3>Extended Escape</h3>
+                            <p>Designed for extended surf trips.</p>
+                        </div>
+
+                        <div class="rental-price">
+                            <span>FROM</span>
+                            <strong>$129</strong>
+                        </div>
+
+                        <a href="rentals.html" class="rental-button">
+                            Rent a Board <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <div class="rental-panel-footer">
+                        <span>EASY PICKUP</span>
+                        <span>FLEXIBLE RETURN</span>
+                        <span>LOCAL SUPPORT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LESSONS -->
+        <section class="lessons-section section" id="lessons">
+            <div class="container lessons-grid">
+                <div class="lessons-visual">
+                    <img data-fallback="https://images.unsplash.com/photo-1537519646099-335112f65f4f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"
+                        src="./images/surf 7.jpg"
+                        alt="Surfer practicing in the ocean"
+                        loading="lazy"
+                    >
+
+                    <div class="lessons-image-top">
+                        <span>WAVE&amp;CRAFT</span>
+                        <span>01 — ACADEMY</span>
+                    </div>
+
+                    <div class="lessons-image-bottom">
+                        LEARN • RIDE • PROGRESS
+                    </div>
+                </div>
+
+                <div class="lessons-content">
+                    <span class="eyebrow">LEARN THE OCEAN</span>
+
+                    <h2 class="section-heading">
+                        From First Wave
+                        <span>to Confident Surfer.</span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Our instructors make learning simple, safe, and rewarding
+                        — whether you're standing on a board for the first time
+                        or refining your technique.
+                    </p>
+
+                    <div class="lesson-list">
+                        <article class="lesson">
+                            <span class="lesson-number">01</span>
+
+                            <div class="lesson-main">
+                                <div class="lesson-heading">
+                                    <div>
+                                        <small>START HERE</small>
+                                        <h3>Beginner Sessions</h3>
+                                    </div>
+                                    <span class="lesson-duration">90 MIN</span>
+                                </div>
+
+                                <p>
+                                    Learn balance, paddling, ocean awareness,
+                                    and your first wave.
+                                </p>
+
+                                <a href="lessons.html" class="text-link">
+                                    Book a Lesson
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="lesson">
+                            <span class="lesson-number">02</span>
+
+                            <div class="lesson-main">
+                                <div class="lesson-heading">
+                                    <div>
+                                        <small>KEEP GOING</small>
+                                        <h3>Progression Sessions</h3>
+                                    </div>
+                                    <span class="lesson-duration">90 MIN</span>
+                                </div>
+
+                                <p>
+                                    Improve technique, positioning, timing,
+                                    and confidence.
+                                </p>
+
+                                <a href="lessons.html" class="text-link">
+                                    Book a Lesson
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="lesson">
+                            <span class="lesson-number">03</span>
+
+                            <div class="lesson-main">
+                                <div class="lesson-heading">
+                                    <div>
+                                        <small>GO DEEPER</small>
+                                        <h3>Private Coaching</h3>
+                                    </div>
+                                    <span class="lesson-duration">60 MIN</span>
+                                </div>
+
+                                <p>
+                                    Personalized instruction focused entirely
+                                    on your goals.
+                                </p>
+
+                                <a href="lessons.html" class="text-link">
+                                    Book a Lesson
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="lesson-stats">
+                        <div>
+                            <strong>01:01</strong>
+                            <span>Instructor-to-student attention</span>
+                        </div>
+                        <div>
+                            <strong>ALL LEVELS</strong>
+                            <span>Beginner to advanced</span>
+                        </div>
+                        <div>
+                            <strong>LOCAL</strong>
+                            <span>Ocean-focused guidance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SURF STYLE -->
+        <section class="surf-style-section section" id="surf-style" aria-labelledby="surfStyleHeading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">YOUR OCEAN. YOUR PACE.</span>
+                    <h2 class="section-heading" id="surfStyleHeading">Find your rhythm. <span>Make it yours.</span></h2>
+                    <p>Choose the experience that fits your next day by the ocean.</p>
+                </div>
+                <div class="surf-style-grid">
+                    <article class="surf-style-card">
+                        <span class="style-icon"><i data-lucide="waves" aria-hidden="true"></i></span>
+                        <span class="eyebrow">01 / FIRST WAVES</span>
+                        <h3>Start with a little guidance.</h3>
+                        <p>Build your confidence with friendly instruction, ocean awareness, and the basics of catching a wave.</p>
+                        <a class="button button-primary" href="lessons.html">Find a Lesson <span aria-hidden="true">↗</span></a>
+                    </article>
+                    <article class="surf-style-card">
+                        <span class="style-icon"><i data-lucide="compass" aria-hidden="true"></i></span>
+                        <span class="eyebrow">02 / WEEKEND ESCAPES</span>
+                        <h3>Travel light. Ride more.</h3>
+                        <p>Pick a rental for a spontaneous morning session or a longer coastal escape, with flexible options for your trip.</p>
+                        <a class="button button-primary" href="rentals.html">Explore Rentals <span aria-hidden="true">↗</span></a>
+                    </article>
+                    <article class="surf-style-card">
+                        <span class="style-icon"><i data-lucide="sun" aria-hidden="true"></i></span>
+                        <span class="eyebrow">03 / EVERYDAY SESSIONS</span>
+                        <h3>Find a board that feels right.</h3>
+                        <p>Explore responsive shortboards, easygoing funboards, and classic longboards to match the way you love to surf.</p>
+                        <a class="button button-primary" href="shop.html">Shop the Collection <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPACT FINAL CTA -->
+        <section class="final-cta-section">
+            <div class="container">
+                <div class="final-cta-card">
+                    <span class="final-cta-eyebrow">
+                        YOUR NEXT SESSION STARTS HERE
+                    </span>
+
+                    <h2>
+                        Find Your Board. <span>Catch Your Wave.</span>
+                    </h2>
+
+                    <p>
+                        Whether you're buying your first board, renting for the
+                        weekend, or ready to learn, Wave&amp;Craft is here for
+                        your next ocean adventure.
+                    </p>
+
+                    <div class="final-cta-actions">
+                        <a href="shop.html" class="button button-primary">
+                            Shop Surfboards
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="rentals.html" class="button button-outline">
+                            Book a Rental
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                    <img
+                        class="brand-logo"
+                        src="./images/logo.png" data-fallback="./images/logo.svg"
+                        alt=""
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                    >
+
+                    <span class="brand-text">
+                        <strong>
+                            <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                        </strong>
+                        <small>Surf Shop &amp; Rental</small>
+                    </span>
+                </a>
+
+                <p>
+                    Quality surfboards, flexible rentals, and friendly guidance
+                    for your next ocean adventure.
+                </p>
+
+                <div class="footer-social-icons" aria-label="Social links">
+                    <!-- Replace # with your social profile URLs. -->
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                fill="currentColor"
+                                d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.4L6.45 22H3.34l7.24-8.28L2.8 2h6.4l4.43 5.86L18.9 2Zm-1.1 17.75h1.73L8.28 4.14H6.42L17.8 19.75Z"
+                            />
+                        </svg>
+                    </a>
+
+                    <a
+                        href="mailto:hello@wavecraft.com"
+                        class="social-icon"
+                        aria-label="Email"
+                    >
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect
+                                x="3" y="3" width="18" height="18" rx="5"
+                                fill="none" stroke="currentColor" stroke-width="2"
+                            />
+                            <circle
+                                cx="12" cy="12" r="4"
+                                fill="none" stroke="currentColor" stroke-width="2"
+                            />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                        </svg>
+                    </a>
+
+                    <!-- Replace # with your business WhatsApp URL. -->
+                    <a href="#" class="social-icon" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                fill="currentColor"
+                                d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.5 0 .16 5.34 .16 11.9c0 2.1.55 4.15 1.59 5.96L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.23-6.17-3.44-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.71.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-navigation">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="services.html">Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+
+                    <div class="footer-links">
+                        <a href="shop.html">All Boards</a>
+                        <a href="shop.html">Shortboards</a>
+                        <a href="shop.html">Longboards</a>
+                        <a href="shop.html">Funboards</a>
+                        <a href="shop.html">Fish Boards</a>
+                        <a href="shop.html">Soft Tops</a>
+                    </div>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                            <span>123 Beach Road,<br>Surf City</span>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" aria-hidden="true"></i>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <a href="mailto:hello@wavecraft.com">
+                                hello@wavecraft.com
+                            </a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="clock-3" aria-hidden="true"></i>
+                            <span>Mon – Sun<br>8:00 AM – 7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>
+                © <span id="footerYear">2026</span> Wave&amp;Craft.
+                All rights reserved.
+            </span>
+
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop Surfboards &amp; Essentials | Wave&amp;Craft</title>
+
+    <meta name="description" content="Wave&Craft surf shop — surfboards, rentals, lessons and coastal good vibes.">
+    <meta name="theme-color" content="#00A6A6">
+
+    <link rel="icon" type="image/png" href="./images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shop.css">
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="shop.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60">
+
+                <span class="brand-text">
+                    <strong>
+                        <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                    </strong>
+                    <small>Surf Shop &amp; Rental</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger" id="homeDropdownButton" type="button" aria-expanded="false"
+                        aria-controls="homeDropdownMenu">
+                        Home
+                        <i data-lucide="chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdownMenu">
+                        <a href="index.html">Home</a>
+
+                        <a href="home2.html">
+                            <span>Home 2</span>
+                            <small>Premium</small>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link">About</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="rentals.html" class="nav-link">Rentals</a>
+                <a href="lessons.html" class="nav-link">Lessons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="direction-button" id="directionToggle" type="button" aria-label="Switch to right-to-left"
+                    title="Change text direction">
+                    RTL
+                </button>
+
+                <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode"
+                    title="Toggle theme">
+                    <i data-lucide="moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="booking.html" class="login-button">
+                    Rent a Board
+                </a>
+
+                <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i data-lucide="menu" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="shop-hero" aria-labelledby="shopTitle">
+            <div class="container hero-shop-grid">
+                <div class="hero-copy">
+                    <div class="wc-hero-eyebrow">
+                        <span aria-hidden="true"></span>
+                        WAVE&amp;CRAFT — SURF SHOP &amp; RENTALS
+                    </div>
+                    <h1 id="shopTitle">Your next wave.<br><span>Your kind of board.</span></h1>
+                    <p>Thoughtfully chosen shapes. Everyday essentials.<br>Find the gear that feels like you.</p>
+                    <div class="wc-hero-actions"><a class="button" href="#boards">Shop the boards ↗</a><a
+                            class="hero-secondary" href="#collections">Find your shape <span>↓</span></a></div>
+                    <div class="hero-footnote"><span>01 — THE BOARD EDIT</span><span>SHAPED FOR OCEAN MINDS</span></div>
+                </div>
+                <div class="hero-showcase"><span class="showcase-label">THE EVERYDAY QUIVER</span>
+                    <div class="hero-boards">
+                        <div class="board-art " style="--board-color:#ef927c" aria-hidden="true">
+                            <div class="board-shape shape-0"><span>W/C</span></div>
+                        </div>
+                        <div class="board-art " style="--board-color:#d8b77c" aria-hidden="true">
+                            <div class="board-shape shape-1"><span>W/C</span></div>
+                        </div>
+                        <div class="board-art " style="--board-color:#70aaa4" aria-hidden="true">
+                            <div class="board-shape shape-2"><span>W/C</span></div>
+                        </div>
+                    </div>
+                    <div class="showcase-bottom">
+                        <div><small>FROM FIRST WAVES TO FAVOURITE BREAKS</small><strong>A shape for every
+                                session.</strong></div><a href="#boards" aria-label="Explore the board collection">↗</a>
+                    </div><span class="orbit-word" aria-hidden="true">SURF / EXPLORE / REPEAT</span>
+                </div>
+            </div>
+        </section>
+        <section class="section collections-section" id="collections">
+            <div class="container">
+                <div class="shop-heading reveal">
+                    <div><span class="eyebrow">02 / FIND YOUR FEEL</span>
+                        <h2 class="section-heading">Different shapes. <span>Same stoke.</span></h2>
+                    </div>
+                    <p>Choose your style. Discover a board that moves with you.</p>
+                </div>
+                <div class="collection-grid"><a class="collection-card reveal" href="#boards"
+                        data-category="Shortboards"><span class="card-index">01 / COLLECTION</span>
+                        <div class="board-art " style="--board-color:#ef927c" aria-hidden="true">
+                            <div class="board-shape shape-0"><span>W/C</span></div>
+                        </div>
+                        <div>
+                            <h3>Shortboards</h3><span aria-hidden="true">↗</span>
+                        </div>
+                        <p>Precision & performance</p>
+                    </a><a class="collection-card reveal" href="#boards" data-category="Longboards"><span
+                            class="card-index">02 / COLLECTION</span>
+                        <div class="board-art " style="--board-color:#d8b77c" aria-hidden="true">
+                            <div class="board-shape shape-1"><span>W/C</span></div>
+                        </div>
+                        <div>
+                            <h3>Longboards</h3><span aria-hidden="true">↗</span>
+                        </div>
+                        <p>Glide & flow</p>
+                    </a><a class="collection-card reveal" href="#boards" data-category="Funboards"><span
+                            class="card-index">03 / COLLECTION</span>
+                        <div class="board-art " style="--board-color:#70aaa4" aria-hidden="true">
+                            <div class="board-shape shape-2"><span>W/C</span></div>
+                        </div>
+                        <div>
+                            <h3>Funboards</h3><span aria-hidden="true">↗</span>
+                        </div>
+                        <p>Everyday versatility</p>
+                    </a><a class="collection-card reveal" href="#boards" data-category="Fish Boards"><span
+                            class="card-index">04 / COLLECTION</span>
+                        <div class="board-art " style="--board-color:#93a5ca" aria-hidden="true">
+                            <div class="board-shape shape-3"><span>W/C</span></div>
+                        </div>
+                        <div>
+                            <h3>Fish Boards</h3><span aria-hidden="true">↗</span>
+                        </div>
+                        <p>Small-wave speed</p>
+                    </a><a class="collection-card reveal" href="#boards" data-category="Soft Tops"><span
+                            class="card-index">05 / COLLECTION</span>
+                        <div class="board-art " style="--board-color:#eacb75" aria-hidden="true">
+                            <div class="board-shape shape-4"><span>W/C</span></div>
+                        </div>
+                        <div>
+                            <h3>Soft Tops</h3><span aria-hidden="true">↗</span>
+                        </div>
+                        <p>Easy beginnings</p>
+                    </a><a class="collection-card reveal" href="#boards" data-category="Hybrids"><span
+                            class="card-index">06 / COLLECTION</span>
+                        <div class="board-art " style="--board-color:#c1a9bd" aria-hidden="true">
+                            <div class="board-shape shape-5"><span>W/C</span></div>
+                        </div>
+                        <div>
+                            <h3>Hybrids</h3><span aria-hidden="true">↗</span>
+                        </div>
+                        <p>A little of everything</p>
+                    </a></div>
+            </div>
+        </section>
+        <section class="section catalog-section" id="boards">
+            <div class="container">
+                <div class="shop-heading reveal">
+                    <div><span class="eyebrow">03 / THE SURFBOARD COLLECTION</span>
+                        <h2 class="section-heading">Meet your <span>next ride.</span></h2>
+                    </div>
+                    <p>From playful twins to effortless cruisers, your next session starts here.</p>
+                </div>
+                <div class="catalog-toolbar">
+                    <div class="filter-list" role="group" aria-label="Filter surfboards"><button data-filter="all"
+                            aria-pressed="true">All boards</button><button data-filter="Shortboards"
+                            aria-pressed="false">Shortboards</button><button data-filter="Longboards"
+                            aria-pressed="false">Longboards</button><button data-filter="Funboards"
+                            aria-pressed="false">Funboards</button><button data-filter="Fish Boards"
+                            aria-pressed="false">Fish Boards</button><button data-filter="Soft Tops"
+                            aria-pressed="false">Soft Tops</button><button data-filter="Hybrids"
+                            aria-pressed="false">Hybrids</button></div><button class="bag-trigger" id="openBag">Bag
+                        (<span id="bagCount">0</span>) ↗</button>
+                </div>
+                <div class="catalog-meta"><span id="resultCount" role="status">8 boards to explore</span><label>Sort by
+                        <select id="sortBoards">
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: low to high</option>
+                            <option value="high">Price: high to low</option>
+                            <option value="name">Name: A–Z</option>
+                        </select></label></div>
+                <div class="product-grid" id="productGrid">
+                    <article class="product-card reveal" data-type="Shortboards" data-price="749"
+                        data-name="Ocean Runner"><button class="product-visual" data-view="0"
+                            aria-label="View Ocean Runner details"><span class="product-tag">CREW PICK</span>
+                            <div class="board-art " style="--board-color:#ef927c" aria-hidden="true">
+                                <div class="board-shape shape-0"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Shortboards · 5′10″</span>
+                            <h3>Ocean Runner</h3>
+                            <p>Sharp turns. Clean lines.</p>
+                            <div class="product-bottom"><strong>$749</strong><button class="add-button" data-add="0"
+                                    aria-label="Add Ocean Runner to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-type="Longboards" data-price="849"
+                        data-name="Tide Explorer"><button class="product-visual" data-view="1"
+                            aria-label="View Tide Explorer details"><span class="product-tag">CREW PICK</span>
+                            <div class="board-art " style="--board-color:#d8b77c" aria-hidden="true">
+                                <div class="board-shape shape-1"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Longboards · 9′2″</span>
+                            <h3>Tide Explorer</h3>
+                            <p>Timeless glide and easy flow.</p>
+                            <div class="product-bottom"><strong>$849</strong><button class="add-button" data-add="1"
+                                    aria-label="Add Tide Explorer to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-type="Funboards" data-price="629"
+                        data-name="Coastal Cruiser"><button class="product-visual" data-view="2"
+                            aria-label="View Coastal Cruiser details"><span class="product-tag">CREW PICK</span>
+                            <div class="board-art " style="--board-color:#70aaa4" aria-hidden="true">
+                                <div class="board-shape shape-2"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Funboards · 7′2″</span>
+                            <h3>Coastal Cruiser</h3>
+                            <p>A smooth everyday ride.</p>
+                            <div class="product-bottom"><strong>$629</strong><button class="add-button" data-add="2"
+                                    aria-label="Add Coastal Cruiser to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-type="Fish Boards" data-price="589"
+                        data-name="Reef Drifter"><button class="product-visual" data-view="3"
+                            aria-label="View Reef Drifter details"><span class="product-tag">THE COLLECTION</span>
+                            <div class="board-art " style="--board-color:#93a5ca" aria-hidden="true">
+                                <div class="board-shape shape-3"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Fish Boards · 5′6″</span>
+                            <h3>Reef Drifter</h3>
+                            <p>Speed for smaller waves.</p>
+                            <div class="product-bottom"><strong>$589</strong><button class="add-button" data-add="3"
+                                    aria-label="Add Reef Drifter to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-type="Soft Tops" data-price="399" data-name="First Light">
+                        <button class="product-visual" data-view="4" aria-label="View First Light details"><span
+                                class="product-tag">THE COLLECTION</span>
+                            <div class="board-art " style="--board-color:#eacb75" aria-hidden="true">
+                                <div class="board-shape shape-4"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Soft Tops · 8′0″</span>
+                            <h3>First Light</h3>
+                            <p>A forgiving first-wave favourite.</p>
+                            <div class="product-bottom"><strong>$399</strong><button class="add-button" data-add="4"
+                                    aria-label="Add First Light to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-type="Hybrids" data-price="699" data-name="Wave Seeker">
+                        <button class="product-visual" data-view="5" aria-label="View Wave Seeker details"><span
+                                class="product-tag">THE COLLECTION</span>
+                            <div class="board-art " style="--board-color:#c1a9bd" aria-hidden="true">
+                                <div class="board-shape shape-5"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Hybrids · 6′4″</span>
+                            <h3>Wave Seeker</h3>
+                            <p>One shape. More possibilities.</p>
+                            <div class="product-bottom"><strong>$699</strong><button class="add-button" data-add="5"
+                                    aria-label="Add Wave Seeker to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-type="Shortboards" data-price="779"
+                        data-name="Reef Rocket"><button class="product-visual" data-view="6"
+                            aria-label="View Reef Rocket details"><span class="product-tag">THE COLLECTION</span>
+                            <div class="board-art " style="--board-color:#ef927c" aria-hidden="true">
+                                <div class="board-shape shape-0"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Shortboards · 6′0″</span>
+                            <h3>Reef Rocket</h3>
+                            <p>Drive through your next turn.</p>
+                            <div class="product-bottom"><strong>$779</strong><button class="add-button" data-add="6"
+                                    aria-label="Add Reef Rocket to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-type="Longboards" data-price="899"
+                        data-name="Sunday Glide"><button class="product-visual" data-view="7"
+                            aria-label="View Sunday Glide details"><span class="product-tag">THE COLLECTION</span>
+                            <div class="board-art " style="--board-color:#d8b77c" aria-hidden="true">
+                                <div class="board-shape shape-1"><span>W/C</span></div>
+                            </div><span class="view-label">Explore board ↗</span>
+                        </button>
+                        <div class="product-info"><span class="product-type">Longboards · 9′6″</span>
+                            <h3>Sunday Glide</h3>
+                            <p>Take the scenic line.</p>
+                            <div class="product-bottom"><strong>$899</strong><button class="add-button" data-add="7"
+                                    aria-label="Add Sunday Glide to bag">Add to bag <span
+                                        aria-hidden="true">+</span></button></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section essentials-section" id="essentials">
+            <div class="container">
+                <div class="shop-heading reveal">
+                    <div><span class="eyebrow">04 / THE FINISHING TOUCHES</span>
+                        <h2 class="section-heading">Small essentials. <span>Better sessions.</span></h2>
+                    </div>
+                    <p>Complete your kit with the little things you’ll reach for every day.</p>
+                </div>
+                <div class="gear-grid">
+                    <article class="gear-card reveal">
+                        <div class="gear-art" aria-hidden="true">↝</div><span class="product-type">SESSION ESSENTIAL /
+                            01</span>
+                        <h3>All-Day Leash</h3>
+                        <p>Stay connected.</p>
+                        <div class="product-bottom"><strong>$32</strong><button class="add-button" data-add="12"
+                                aria-label="Add All-Day Leash to bag">Add to bag +</button></div>
+                    </article>
+                    <article class="gear-card reveal">
+                        <div class="gear-art" aria-hidden="true">▱</div><span class="product-type">SESSION ESSENTIAL /
+                            02</span>
+                        <h3>Explorer Board Bag</h3>
+                        <p>Protect your favourite shape.</p>
+                        <div class="product-bottom"><strong>$89</strong><button class="add-button" data-add="13"
+                                aria-label="Add Explorer Board Bag to bag">Add to bag +</button></div>
+                    </article>
+                    <article class="gear-card reveal">
+                        <div class="gear-art" aria-hidden="true">◭</div><span class="product-type">SESSION ESSENTIAL /
+                            03</span>
+                        <h3>Flow Fin Set</h3>
+                        <p>Fine-tune your feel.</p>
+                        <div class="product-bottom"><strong>$65</strong><button class="add-button" data-add="14"
+                                aria-label="Add Flow Fin Set to bag">Add to bag +</button></div>
+                    </article>
+                    <article class="gear-card reveal">
+                        <div class="gear-art" aria-hidden="true">▤</div><span class="product-type">SESSION ESSENTIAL /
+                            04</span>
+                        <h3>Grip Traction Pad</h3>
+                        <p>Find your footing.</p>
+                        <div class="product-bottom"><strong>$38</strong><button class="add-button" data-add="15"
+                                aria-label="Add Grip Traction Pad to bag">Add to bag +</button></div>
+                    </article>
+                    <article class="gear-card reveal">
+                        <div class="gear-art" aria-hidden="true">▰</div><span class="product-type">SESSION ESSENTIAL /
+                            05</span>
+                        <h3>Session Surf Wax</h3>
+                        <p>A little extra hold.</p>
+                        <div class="product-bottom"><strong>$8</strong><button class="add-button" data-add="16"
+                                aria-label="Add Session Surf Wax to bag">Add to bag +</button></div>
+                    </article>
+                    <article class="gear-card reveal">
+                        <div class="gear-art" aria-hidden="true">⌁</div><span class="product-type">SESSION ESSENTIAL /
+                            06</span>
+                        <h3>Coastal Change Poncho</h3>
+                        <p>Comfort after the last wave.</p>
+                        <div class="product-bottom"><strong>$59</strong><button class="add-button" data-add="17"
+                                aria-label="Add Coastal Change Poncho to bag">Add to bag +</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section guide-section" id="board-guide">
+            <div class="container guide-grid">
+                <div class="guide-copy reveal"><span class="eyebrow">05 / FIND YOUR MATCH</span>
+                    <h2 class="section-heading">The right board.<br><span>A whole new feeling.</span></h2>
+                    <p>Start with how you surf. We’ll help you narrow down the shapes.</p><a href="contact.html"
+                        class="button">Talk to the surf crew ↗</a>
+                    <div class="guide-note"><span aria-hidden="true">≈</span>
+                        <p>Your height, experience and local waves all play a part in the perfect fit.</p>
+                    </div>
+                </div>
+                <div class="guide-options"><a href="#boards" data-category="Soft Tops"
+                        class="guide-card reveal"><span>01</span>
+                        <div>
+                            <h3>Just getting started?</h3>
+                            <p>More stability. Easier paddling. More smiles.</p><strong>Start with soft tops ↗</strong>
+                        </div>
+                    </a><a href="#boards" data-category="Funboards" class="guide-card reveal"><span>02</span>
+                        <div>
+                            <h3>Finding your rhythm?</h3>
+                            <p>A little extra glide for everyday adventures.</p><strong>Explore funboards ↗</strong>
+                        </div>
+                    </a><a href="#boards" data-category="Shortboards" class="guide-card reveal"><span>03</span>
+                        <div>
+                            <h3>Ready to push your turns?</h3>
+                            <p>Responsive shapes for confident surfing.</p><strong>Discover shortboards ↗</strong>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+        <section class="final-cta-section">
+            <div class="container">
+                <div class="final-cta-card">
+                    <span class="final-cta-eyebrow">
+                        YOUR NEXT BOARD IS WAITING
+                    </span>
+
+                    <h2>
+                        Good Gear. <span>Great Waves.</span>
+                    </h2>
+
+                    <p>Find your shape. Make every session count.</p>
+
+                    <div class="final-cta-actions">
+                        <a href="#boards" class="button button-primary">
+                            Shop Surfboards
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="contact.html" class="button button-outline">
+                            Ask Our Crew
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                    <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60" loading="lazy">
+
+                    <span class="brand-text">
+                        <strong>
+                            <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                        </strong>
+                        <small>Surf Shop &amp; Rental</small>
+                    </span>
+                </a>
+
+                <p>
+                    Quality surfboards, flexible rentals, and friendly guidance
+                    for your next ocean adventure.
+                </p>
+
+                <div class="footer-social-icons" aria-label="Social links">
+                    <!-- Replace # with your social profile URLs. -->
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.4L6.45 22H3.34l7.24-8.28L2.8 2h6.4l4.43 5.86L18.9 2Zm-1.1 17.75h1.73L8.28 4.14H6.42L17.8 19.75Z" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:hello@wavecraft.com" class="social-icon" aria-label="Email">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <!-- Replace # with your business WhatsApp URL. -->
+                    <a href="#" class="social-icon" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.5 0 .16 5.34 .16 11.9c0 2.1.55 4.15 1.59 5.96L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.23-6.17-3.44-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.71.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-navigation">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="services.html">Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+
+                    <div class="footer-links">
+                        <a href="shop.html">All Boards</a>
+                        <a href="shop.html">Shortboards</a>
+                        <a href="shop.html">Longboards</a>
+                        <a href="shop.html">Funboards</a>
+                        <a href="shop.html">Fish Boards</a>
+                        <a href="shop.html">Soft Tops</a>
+                    </div>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                            <span>123 Beach Road,<br>Surf City</span>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" aria-hidden="true"></i>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <a href="mailto:hello@wavecraft.com">
+                                hello@wavecraft.com
+                            </a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="clock-3" aria-hidden="true"></i>
+                            <span>Mon – Sun<br>8:00 AM – 7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>
+                © <span id="footerYear">2026</span> Wave&amp;Craft.
+                All rights reserved.
+            </span>
+
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </nav>
+        </div>
+    </footer>
+    <dialog id="productDialog" class="shop-dialog"><button class="dialog-close" data-close
+            aria-label="Close product details">×</button>
+        <div id="productDetail"></div>
+    </dialog>
+    <dialog id="bagDialog" class="shop-dialog"><button class="dialog-close" data-close
+            aria-label="Close shopping bag">×</button><span class="eyebrow">YOUR NEXT SESSION</span>
+        <h2>Your shopping bag.</h2>
+        <p class="bag-note">Saved on this device. Checkout is not connected.</p>
+        <div id="bagItems"></div>
+        <div class="bag-total">Subtotal <strong id="bagTotal">$0</strong></div><a class="button" href="contact.html">Ask
+            our crew about your order ↗</a>
+    </dialog>
+    <div class="shop-toast" id="shopToast" role="status" aria-live="polite"></div>
+</body>
+
+</html>

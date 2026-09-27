@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Wave&amp;Craft</title>
+
+    <meta name="description"
+        content="Meet Wave&Craft: our story, our values, and our shared love of surfing and the ocean.">
+    <meta name="theme-color" content="#00A6A6">
+
+    <link rel="icon" type="image/png" href="./images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="about.css">
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="about.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60">
+
+                <span class="brand-text">
+                    <strong>
+                        <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                    </strong>
+                    <small>Surf Shop &amp; Rental</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger" id="homeDropdownButton" type="button" aria-expanded="false"
+                        aria-controls="homeDropdownMenu">
+                        Home
+                        <i data-lucide="chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdownMenu">
+                        <a href="index.html">Home</a>
+
+                        <a href="home2.html">
+                            <span>Home 2</span>
+                            <small>Premium</small>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link active" aria-current="page">About</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="rentals.html" class="nav-link">Rentals</a>
+                <a href="lessons.html" class="nav-link">Lessons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="direction-button" id="directionToggle" type="button" aria-label="Switch to right-to-left"
+                    title="Change text direction">
+                    RTL
+                </button>
+
+                <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode"
+                    title="Toggle theme">
+                    <i data-lucide="moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="booking.html" class="login-button">
+                    Rent a Board
+                </a>
+
+                <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i data-lucide="menu" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main id="main-content">
+        <!-- 01 / HERO: a new editorial split layout -->
+        <section class="about-hero" aria-labelledby="heroHeading">
+            <div class="container about-split hero-split">
+                <div class="about-copy hero-copy" data-reveal>
+                    <div class="wc-hero-eyebrow">
+                        <span aria-hidden="true"></span>
+                        WAVE&amp;CRAFT — SURF SHOP &amp; RENTALS
+                    </div>
+                    <h1 id="heroHeading">Ocean people.<br><em>Through &amp; through.</em></h1>
+                    <p>Good boards. Shared knowledge. A little salt in everything we do. We’re here to help you feel at
+                        home in the water.</p>
+                    <div class="about-actions"><a href="#our-story" class="button">Get to Know Us <span
+                                aria-hidden="true">↗</span></a><a href="contact.html" class="hero-quiet-link">Say hello
+                            <span aria-hidden="true">↗</span></a></div>
+                    <div class="hero-note"><span class="little-wave" aria-hidden="true">≈</span><span>ROOTED IN
+                            SURF.<br>OPEN TO EVERYONE.</span></div>
+                </div>
+                <figure class="hero-photo" data-reveal>
+                    <img src="./images/hero 1.avif"
+                        data-fallback="https://images.unsplash.com/photo-1537519646099-335112f65f4f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+                        alt="Surfer drawing a line across an ocean wave" fetchpriority="high" width="720" height="850">
+                    <figcaption><span>THE WATER CONNECTS US.</span><span aria-hidden="true">01 / 06</span></figcaption>
+                    <div class="ocean-stamp" aria-hidden="true">MORE THAN<br><strong>A SURF SHOP.</strong><span>≈</span>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 02 / OUR STORY -->
+        <section class="section story-section" id="our-story" aria-labelledby="storyHeading">
+            <div class="container about-split">
+                <div class="about-copy" data-reveal>
+                    <span class="eyebrow">01 / OUR STORY</span>
+                    <h2 class="section-heading" id="storyHeading">It starts with a wave.<br><span>It grows with
+                            people.</span></h2>
+                    <p class="section-intro">The best part of surfing isn’t always the wave. Sometimes it’s the person
+                        who helps you catch it.</p>
+                    <p>That spirit is at the heart of Wave&amp;Craft. We bring boards, rentals, and lessons together in
+                        one welcoming place, so finding your way into the ocean feels a little easier.</p>
+                    <p>Whether you’re choosing your first board or exploring a different shape, we believe a good
+                        conversation comes first. Your experience, your questions, and the way you want to surf guide
+                        the next step.</p>
+                    <a href="services.html" class="text-link">See What We Do <span aria-hidden="true">↗</span></a>
+                </div>
+                <figure class="story-photo about-photo" data-reveal>
+                    <img src="./images/surf 4.avif"
+                        data-fallback="https://images.unsplash.com/photo-1455729552865-3658a5d39692?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                        alt="Surf culture along the coastline" loading="lazy" width="700" height="760">
+                    <figcaption><span aria-hidden="true">≈</span>
+                        <div>A shared love. An open invitation.<small>THIS IS WAVE&amp;CRAFT.</small></div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 03 / OUR VALUES -->
+        <section class="section values-section" aria-labelledby="valuesHeading">
+            <div class="container about-split">
+                <div class="about-copy" data-reveal>
+                    <span class="eyebrow">02 / WHAT WE STAND FOR</span>
+                    <h2 class="section-heading" id="valuesHeading">Different surfers.<br><span>Shared values.</span>
+                    </h2>
+                    <p>Our approach is simple: listen well, choose thoughtfully, and make room for one another. These
+                        are the things we want every visit to feel like.</p>
+                    <div class="values-signature" aria-hidden="true">Good waves.<br>Better together.</div>
+                </div>
+                <div class="value-stack">
+                    <article class="value-card" data-reveal><span class="value-number">01</span>
+                        <div>
+                            <h3>Everyone belongs</h3>
+                            <p>First paddle or familiar lineup, there’s space for your questions and your own pace.</p>
+                        </div><i data-lucide="users" aria-hidden="true"></i>
+                    </article>
+                    <article class="value-card" data-reveal><span class="value-number">02</span>
+                        <div>
+                            <h3>Purpose in every choice</h3>
+                            <p>A board should fit the surfer. We focus on the shapes and equipment that make sense for
+                                you.</p>
+                        </div><i data-lucide="compass" aria-hidden="true"></i>
+                    </article>
+                    <article class="value-card" data-reveal><span class="value-number">03</span>
+                        <div>
+                            <h3>Respect the ocean</h3>
+                            <p>Read the conditions, respect other surfers, and leave the shoreline better than you found
+                                it.</p>
+                        </div><i data-lucide="waves" aria-hidden="true"></i>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 / OUR APPROACH -->
+        <section class="section approach-section" aria-labelledby="approachHeading">
+            <div class="container about-split">
+                <div class="about-copy" data-reveal>
+                    <span class="eyebrow">03 / THE WAVE&amp;CRAFT WAY</span>
+                    <h2 class="section-heading" id="approachHeading">Less guesswork.<br><span>More time in the
+                            water.</span></h2>
+                    <p>You don’t need to know all the terminology to get started. Tell us where you are in your surf
+                        journey, and we’ll help you explore what comes next.</p>
+                    <a href="lessons.html" class="text-link">Explore Our Lessons <span aria-hidden="true">↗</span></a>
+                </div>
+                <ol class="approach-steps">
+                    <li data-reveal><span>01</span>
+                        <div><small>LET’S TALK</small>
+                            <h3>Start with your story</h3>
+                            <p>Your confidence, experience, and goals help shape the conversation.</p>
+                        </div>
+                    </li>
+                    <li data-reveal><span>02</span>
+                        <div><small>FIND YOUR FIT</small>
+                            <h3>Choose your next step</h3>
+                            <p>Explore a board, try a rental, or build your foundations with a lesson.</p>
+                        </div>
+                    </li>
+                    <li data-reveal><span>03</span>
+                        <div><small>KEEP EXPLORING</small>
+                            <h3>Make progress your own</h3>
+                            <p>Bring back your questions as your surfing develops. There’s always more to learn.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 05 / OCEAN CARE -->
+        <section class="section ocean-section" aria-labelledby="oceanHeading">
+            <div class="container about-split">
+                <div class="about-copy" data-reveal>
+                    <span class="eyebrow">04 / FOR THE PLACE WE LOVE</span>
+                    <h2 class="section-heading" id="oceanHeading">The ocean gives us a lot.<br><span>Let’s care for
+                            it.</span></h2>
+                    <p>Surfing connects us to something bigger than a single session. Caring for the coast is part of
+                        the culture we want to share.</p>
+                    <ul class="ocean-promises">
+                        <li><i data-lucide="check" aria-hidden="true"></i>Take your litter home. Pick up a little extra.
+                        </li>
+                        <li><i data-lucide="check" aria-hidden="true"></i>Give wildlife and other ocean users space.
+                        </li>
+                        <li><i data-lucide="check" aria-hidden="true"></i>Care for your equipment so it lasts longer.
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="button">Share Your Ideas <span aria-hidden="true">↗</span></a>
+                </div>
+                <figure class="ocean-photo about-photo" data-reveal><img
+                        src="./images/surf 9.jpg"
+                        alt="Ocean waves meeting an open stretch of coastline" width="700" height="700" loading="lazy">
+                    <figcaption>OUR FAVORITE PLACE.<br><strong>OUR SHARED RESPONSIBILITY.</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 06 / FINAL CTA: same layout as the home page -->
+        <section class="final-cta-section" aria-labelledby="ctaHeading">
+            <div class="container">
+                <div class="final-cta-card" data-reveal>
+                    <span class="final-cta-eyebrow">THERE’S A PLACE FOR YOU HERE</span>
+                    <h2 id="ctaHeading">Come for the Waves. <span>Feel Part of the Crew.</span></h2>
+                    <p>Now you know a little about us. We’d love to hear your story, help you find your next board, or
+                        welcome you to your first lesson.</p>
+                    <div class="final-cta-actions">
+                        <a href="contact.html" class="button button-primary">Get in Touch <span
+                                aria-hidden="true">↗</span></a>
+                        <a href="lessons.html" class="button button-outline">Find Your First Lesson <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="brand" aria-label="Wave&Craft home">
+                    <img class="brand-logo" src="./images/logo.png" alt="" width="60" height="60" loading="lazy">
+
+                    <span class="brand-text">
+                        <strong>
+                            <span class="brand-primary">Wave</span><span class="brand-secondary">&amp;Craft</span>
+                        </strong>
+                        <small>Surf Shop &amp; Rental</small>
+                    </span>
+                </a>
+
+                <p>
+                    Quality surfboards, flexible rentals, and friendly guidance
+                    for your next ocean adventure.
+                </p>
+
+                <div class="footer-social-icons" aria-label="Social links">
+                    <!-- Replace # with your social profile URLs. -->
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.4L6.45 22H3.34l7.24-8.28L2.8 2h6.4l4.43 5.86L18.9 2Zm-1.1 17.75h1.73L8.28 4.14H6.42L17.8 19.75Z" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:hello@wavecraft.com" class="social-icon" aria-label="Email">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <!-- Replace # with your business WhatsApp URL. -->
+                    <a href="#" class="social-icon" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.5 0 .16 5.34 .16 11.9c0 2.1.55 4.15 1.59 5.96L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.23-6.17-3.44-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.71.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-navigation">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="services.html">Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+
+                    <div class="footer-links">
+                        <a href="shop.html">All Boards</a>
+                        <a href="shop.html">Shortboards</a>
+                        <a href="shop.html">Longboards</a>
+                        <a href="shop.html">Funboards</a>
+                        <a href="shop.html">Fish Boards</a>
+                        <a href="shop.html">Soft Tops</a>
+                    </div>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                            <span>123 Beach Road,<br>Surf City</span>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" aria-hidden="true"></i>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <a href="mailto:hello@wavecraft.com">
+                                hello@wavecraft.com
+                            </a>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <i data-lucide="clock-3" aria-hidden="true"></i>
+                            <span>Mon – Sun<br>8:00 AM – 7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>
+                © <span id="footerYear">2026</span> Wave&amp;Craft.
+                All rights reserved.
+            </span>
+
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
