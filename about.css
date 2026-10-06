@@ -405,6 +405,10 @@ p {
     margin-inline-start: 0;
 }
 
+.mobile-rent-cta {
+    display: none;
+}
+
 .direction-button,
 .icon-button,
 .mobile-toggle {
@@ -1422,6 +1426,26 @@ p {
         display: block;
     }
 
+    .mobile-rent-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: 8px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: var(--primary);
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .mobile-rent-cta:hover,
+    .mobile-rent-cta:focus-visible {
+        background: var(--secondary);
+        color: #fff;
+    }
+
     .mobile-toggle {
         display: grid;
     }
@@ -1974,9 +1998,23 @@ p {
 .approach-steps li:first-child { padding-top:0; }.approach-steps li:last-child { border-bottom:0; padding-bottom:0; }
 .approach-steps li > span { display:grid; place-items:center; width:52px; height:52px; border:1px solid var(--border); border-radius:50%; color:var(--primary); font-size:18px; transition:background .3s,color .3s; }
 .approach-steps small { display:block; font-size:10px; letter-spacing:.15em; color:var(--muted); margin-bottom:9px; }
-.ocean-section { background:#073239; color:#fff; }.ocean-section .eyebrow,.ocean-section .section-heading span { color:#6ed4c8; }.ocean-section p { color:#cedfdd; }
-.ocean-promises { list-style:none; display:grid; gap:16px; margin-block:28px; color:#e4eeeb; font-size:16px; }.ocean-promises li { display:flex; align-items:flex-start; gap:12px; }.ocean-promises svg { flex-shrink:0; width:19px; height:19px; margin-top:4px; color:#6ed4c8; }
-.ocean-photo > img { height:500px; }.ocean-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(transparent 40%,#042126d9); pointer-events:none; }.ocean-photo figcaption { position:absolute; bottom:32px; inset-inline:32px; z-index:1; color:white; font-size:11px; letter-spacing:.12em; }.ocean-photo figcaption strong { display:block; font-size:20px; letter-spacing:-.02em; margin-top:6px; font-weight:500; }
+.boards-section { background:var(--bg-alt); }
+.boards-heading { display:flex; align-items:end; justify-content:space-between; gap:36px; margin-bottom:32px; }
+.boards-heading .section-heading { margin-bottom:0; }
+.boards-heading > p { max-width:380px; margin-bottom:4px; }
+.about-board-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+.about-board-card { min-width:0; overflow:hidden; border:1px solid var(--border); border-radius:16px; background:var(--card); transition:transform .3s,border-color .3s,box-shadow .3s; }
+.about-board-image { position:relative; display:block; overflow:hidden; aspect-ratio:4/3; background:var(--bg-alt); }
+.about-board-image img { width:100%; height:100%; object-fit:contain; transition:transform .6s cubic-bezier(.2,.65,.3,1); }
+.about-board-image > span { position:absolute; z-index:1; inset-inline-start:14px; bottom:12px; padding:5px 8px; border-radius:999px; background:rgba(19,33,38,.78); color:#fff; font-size:9px; letter-spacing:.12em; }
+.about-board-info { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; padding:18px 16px 10px; }
+.about-board-info h3 { font-size:19px; font-weight:500; line-height:1.25; }
+.about-board-info p { margin-top:5px; font-size:13px; line-height:1.45; }
+.about-board-info > strong { flex-shrink:0; font-size:17px; font-weight:600; }
+.about-board-link { display:flex; align-items:center; justify-content:space-between; margin:0 16px; padding-block:12px; border-top:1px solid var(--border); color:var(--primary); font-size:13px; font-weight:600; }
+.boards-all-link { display:flex; width:fit-content; align-items:center; gap:12px; margin:28px auto 0; padding-bottom:5px; border-bottom:1px solid var(--primary); font-weight:600; }
+.boards-all-link span,.about-board-link span { transition:transform .2s ease; }
+.boards-all-link:hover span,.about-board-link:hover span { transform:translate(3px,-3px); }
 @keyframes stamp-arrive { from { opacity:0; transform:rotate(-22deg) scale(.85); } to { opacity:1; transform:rotate(-10deg) scale(1); } }
 @media (hover:hover) and (pointer:fine) { .about-photo:hover > img { transform:scale(1.04); }.value-card:hover { transform:translateY(-4px); border-color:var(--primary); box-shadow:var(--shadow); }.approach-steps li:hover > span { background:var(--primary); color:#06272b; } }
 @media (max-width:1000px) { .about-split { gap:36px; }.hero-photo > img { height:490px; }.hero-copy h1 { font-size:clamp(40px,5vw,58px); }.wc-hero-eyebrow { flex-wrap:nowrap; }.value-card { padding:22px; gap:12px; }.story-photo > img { height:570px; } }
@@ -1990,7 +2028,10 @@ p {
     .hero-photo { width:min(100% - 28px,520px); margin-inline:auto; }
     .hero-photo > img { height:480px; }.ocean-stamp { inset-inline-start:-14px; width:120px; height:120px; }
     .about-photo,.value-stack,.approach-steps { width:100%; max-width:620px; margin-inline:auto; }
-    .story-photo > img,.ocean-photo > img { height:450px; }
+    .story-photo > img { height:450px; }
+    .about-board-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .boards-heading { align-items:start; flex-direction:column; gap:12px; text-align:center; }
+    .boards-heading > p { margin-inline:auto; }
     .values-signature { border-inline-start:0; padding-inline-start:0; }
     .ocean-promises { width:fit-content; margin-inline:auto; text-align:start; }
 }
@@ -1998,7 +2039,13 @@ p {
     .about-hero .wc-hero-eyebrow { font-size:12px; gap:9px; letter-spacing:.07em; }
     .hero-copy h1 { font-size:42px; }.hero-copy > p { font-size:17px; }
     .hero-photo > img { height:390px; }.hero-photo figcaption { font-size:8px; letter-spacing:.1em; }
-    .about-actions { gap:16px; }.story-photo > img,.ocean-photo > img { height:370px; }
+    .about-actions { gap:16px; }.story-photo > img { height:370px; }
+    .about-board-grid { gap:12px; }
+    .about-board-info { flex-direction:column; gap:4px; padding:14px 12px 8px; }
+    .about-board-info h3 { font-size:17px; }
+    .about-board-info p { font-size:12px; }
+    .about-board-info > strong { font-size:15px; }
+    .about-board-link { margin-inline:12px; font-size:12px; }
     .value-card { grid-template-columns:24px minmax(0,1fr); padding:22px 18px; }.value-card > svg { display:none; }
     .value-card h3,.approach-steps h3 { font-size:22px; }.approach-steps li { gap:16px; }
     .story-photo figcaption { inset-inline:12px; bottom:12px; padding:16px; font-size:15px; }

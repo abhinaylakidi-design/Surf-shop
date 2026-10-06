@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
             !desktopMedia.matches &&
             mainNav?.classList.contains("open") &&
             !mainNav.contains(event.target) &&
-            !mobileToggle?.contains(event.target)
+            !event.composedPath().includes(mobileToggle)
         ) {
             setMobileMenu(false);
         }
@@ -289,6 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const filters = document.querySelectorAll('[data-filter]');
     const cards = document.querySelectorAll('.fleet-card');
     const count = document.getElementById('fleetCount');
+    if (count) count.textContent = `${cards.length} boards to explore`;
     filters.forEach(button => button.addEventListener('click', () => {
         filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
         let visible = 0;

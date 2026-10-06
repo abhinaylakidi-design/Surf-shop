@@ -2596,6 +2596,28 @@ p {
     font-size: 14px
 }
 
+.plan-booking {
+    display: grid;
+    justify-items: end;
+    gap: 8px
+}
+
+.plan-card .plan-rate {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap
+}
+
+.plan-rate strong {
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 600
+}
+
 .plan-link {
     font-size: 13px;
     color: var(--primary);
@@ -2618,6 +2640,10 @@ p {
 .plan-featured .plan-number,
 .plan-featured .plan-link {
     color: #83ded4
+}
+
+.plan-featured .plan-rate strong {
+    color: #fff
 }
 
 .plan-note {
@@ -3009,6 +3035,14 @@ p {
         justify-self: start
     }
 
+    .plan-booking {
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        justify-items: start;
+        gap: 18px
+    }
+
     .plan-card h3 {
         font-size: 23px
     }
@@ -3064,5 +3098,84 @@ p {
     *::after {
         animation: none !important;
         transition: none !important
+    }
+}
+
+.rent-actions .button-primary,
+.final-cta-actions .button-primary {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #06272b;
+}
+
+.rent-actions .button-outline,
+.final-cta-actions .button-outline {
+    border-color: rgba(255, 255, 255, 0.72);
+    background: transparent;
+    color: #fff;
+}
+
+.rent-actions .button-primary:is(:hover, :focus-visible),
+.final-cta-actions .button-primary:is(:hover, :focus-visible) {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #06272b;
+}
+
+.rent-actions .button-outline:is(:hover, :focus-visible),
+.final-cta-actions .button-outline:is(:hover, :focus-visible) {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+/* Product photography: preserve the complete outline of every board. */
+.fleet-art {
+    background: #fff;
+    padding: 42px 16px 38px;
+}
+
+.fleet-product-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+
+.fleet-card:hover .fleet-product-image {
+    transform: scale(1.035);
+}
+
+.fleet-copy {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fleet-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.fleet-copy .text-link {
+    margin-top: auto;
+    padding-top: 18px;
+}
+
+.fleet-copy p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 540px) {
+    .fleet-art {
+        padding: 36px 10px 34px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fleet-card:hover .fleet-product-image {
+        transform: none;
     }
 }

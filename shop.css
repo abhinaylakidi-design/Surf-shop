@@ -2109,8 +2109,8 @@ p {
 }
 
 .shop-hero {
-    background: #073e43;
-    color: #fff;
+    background: #e7f0ec;
+    color: #132126;
     padding: 64px 0 48px;
     overflow: hidden
 }
@@ -2131,13 +2131,17 @@ p {
 }
 
 .hero-copy h1>span {
-    color: #9cdad0
+    color: var(--secondary)
 }
 
 .hero-copy>p {
-    color: #d0e3df;
+    color: #465f60;
     font-size: 19px;
     line-height: 1.7
+}
+
+.hero-copy .wc-hero-eyebrow {
+    color: #087c7b
 }
 
 .hero-copy .wc-hero-actions {
@@ -2150,41 +2154,70 @@ p {
     align-items: center;
     gap: 18px;
     font-size: 15px;
-    border-bottom: 1px solid #83aaa7;
+    border-bottom: 1px solid #567d79;
     padding: 10px 0
 }
 
 .hero-secondary:hover {
-    color: #ffab8e
+    color: #bd4f39
 }
 
 .hero-footnote {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    border-top: 1px solid #ffffff30;
+    border-top: 1px solid #13212630;
     padding-top: 24px;
     margin-top: 64px;
     font-size: 10px;
     letter-spacing: .12em;
-    color: #b4d0cc
+    color: #526d6b
 }
 
 .hero-showcase {
     position: relative;
-    background: #e7ece3;
-    border-radius: 160px 160px 18px 18px;
-    color: #173e40;
+    isolation: isolate;
+    border: 1px solid rgba(255, 255, 255, .28);
+    background:
+        radial-gradient(ellipse at 50% 38%, rgba(106, 190, 169, .24), transparent 43%),
+        linear-gradient(145deg, #174849 0%, #10373b 54%, #0b292f 100%);
+    border-radius: 24px;
+    color: #fff;
     min-height: 470px;
     padding: 40px 28px 25px;
-    overflow: hidden
+    overflow: hidden;
+    box-shadow: 0 30px 75px rgba(19, 52, 53, .2), inset 0 1px 0 rgba(255, 255, 255, .14);
+    transition: transform .35s ease, box-shadow .35s ease
+}
+
+.hero-showcase:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 38px 85px rgba(19, 52, 53, .25), inset 0 1px 0 rgba(255, 255, 255, .14)
+}
+
+.hero-showcase::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 13px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 15px;
+    pointer-events: none
 }
 
 .showcase-label {
     display: block;
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .07);
     text-align: center;
-    font-size: 11px;
-    letter-spacing: .18em
+    font-size: 10px;
+    letter-spacing: .16em;
+    color: #e5d4a7
 }
 
 .hero-boards {
@@ -2279,7 +2312,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    border-top: 1px solid #173e4025;
+    border-top: 1px solid rgba(255, 255, 255, .2);
     padding-top: 20px
 }
 
@@ -2297,19 +2330,18 @@ p {
 .showcase-bottom>a {
     width: 42px;
     height: 42px;
-    border: 1px solid #173e4040;
+    border: 1px solid rgba(229, 212, 167, .72);
     border-radius: 50%;
     display: grid;
-    place-items: center
+    place-items: center;
+    color: #143d3e;
+    background: #e5d4a7;
+    transition: transform .2s ease, background .2s ease
 }
 
-.orbit-word {
-    position: absolute;
-    top: 51%;
-    inset-inline-start: 8px;
-    writing-mode: vertical-rl;
-    font-size: 8px;
-    letter-spacing: .16em
+.showcase-bottom>a:hover {
+    transform: translate(2px, -2px);
+    background: #f1e3bf
 }
 
 .shop-heading {
@@ -2356,6 +2388,10 @@ p {
 
 .collection-card .board-shape {
     scale: .65
+}
+
+.collection-card:nth-child(2) .board-shape {
+    translate: 0 -24px
 }
 
 .collection-card>div:not(.board-art) {

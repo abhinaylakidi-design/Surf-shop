@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
             !desktopMedia.matches &&
             mainNav?.classList.contains("open") &&
             !mainNav.contains(event.target) &&
-            !mobileToggle?.contains(event.target)
+            !event.composedPath().includes(mobileToggle)
         ) {
             setMobileMenu(false);
         }
