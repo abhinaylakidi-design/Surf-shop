@@ -1876,6 +1876,12 @@ p {
     color: #fff;
     backdrop-filter: blur(6px);
 }
+.final-cta-actions .premium-ghost {
+    background: #092e3340;
+    border-color: #ffffff80;
+    color: #fff;
+    backdrop-filter: blur(6px);
+}
 .footer-column h3 { margin-bottom: 12px; }
 .footer-brand > p { margin-top: 14px; line-height: 1.6; }
 .footer-social-icons { margin-top: 16px; }

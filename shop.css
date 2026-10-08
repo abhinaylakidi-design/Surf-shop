@@ -3095,6 +3095,12 @@ p {
     color: #fff;
     backdrop-filter: none;
 }
+.final-cta-actions .premium-ghost {
+    background: rgba(255, 255, 255, .12);
+    border-color: #ffffffb3;
+    color: #fff;
+    backdrop-filter: none;
+}
 
 .shop-hero {
     background: #092d34;
