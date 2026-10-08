@@ -3045,3 +3045,10 @@ html[dir="rtl"] #overview .detail-overview-photo {
         gap: 20px;
     }
 }
+
+.premium-ghost {
+    background: #092e3340;
+    border-color: #ffffff80;
+    color: #fff;
+    backdrop-filter: blur(6px);
+}

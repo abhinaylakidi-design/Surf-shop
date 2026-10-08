@@ -3088,3 +3088,29 @@ p {
         width: calc(100% - 32px);
     }
 }
+
+.shop-hero .premium-ghost {
+    background: rgba(255, 255, 255, .12);
+    border-color: #ffffffb3;
+    color: #fff;
+    backdrop-filter: none;
+}
+
+.shop-hero {
+    background: #092d34;
+    color: #fff;
+}
+
+.shop-hero .hero-copy h1 > span,
+.shop-hero .hero-copy .wc-hero-eyebrow {
+    color: #83ded4;
+}
+
+.shop-hero .hero-copy > p {
+    color: #c5dad9;
+}
+
+.shop-hero .hero-footnote {
+    border-color: #ffffff40;
+    color: #c7dcd9;
+}

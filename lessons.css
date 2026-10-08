@@ -2852,3 +2852,10 @@ p {
         inset-block-start: 16%;
     }
 }
+
+.premium-ghost {
+    background: #092e3340;
+    border-color: #ffffff80;
+    color: #fff;
+    backdrop-filter: blur(6px);
+}

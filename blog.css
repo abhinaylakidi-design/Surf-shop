@@ -3047,3 +3047,10 @@ p {
 .journal-hero-copy>h1 {
     margin-block-start: 0;
 }
+
+.premium-ghost {
+    background: #092e3340;
+    border-color: #ffffff80;
+    color: #fff;
+    backdrop-filter: blur(6px);
+}

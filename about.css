@@ -1972,6 +1972,7 @@ p {
 .hero-copy h1 em { font-style:normal; color:#6ed4c8; }
 .hero-copy > p { font-size:19px; color:#d0e1e1; max-width:480px; }
 .about-actions { display:flex; flex-wrap:wrap; align-items:center; gap:24px; margin-top:30px; }
+.about-hero .premium-ghost { background:#092e3340; border-color:#ffffff80; color:#fff; backdrop-filter:blur(6px); }
 .hero-quiet-link { border-bottom:1px solid #83aaa9; padding-block:10px; transition:color .25s; }
 .hero-quiet-link:hover { color:#6ed4c8; }
 .hero-note { display:flex; align-items:center; gap:16px; margin-top:46px; font-size:11px; line-height:1.65; letter-spacing:.16em; color:#c7dcd9; }

@@ -2798,3 +2798,10 @@ p {
         scroll-behavior: auto !important;
     }
 }
+
+.premium-ghost {
+    background: #092e3340;
+    border-color: #ffffff80;
+    color: #fff;
+    backdrop-filter: blur(6px);
+}
