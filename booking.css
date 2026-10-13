@@ -222,7 +222,7 @@ input[aria-invalid="true"] {
     color: var(--secondary);
 }
 
-/* Larger tagline centered directly beneath the name. */
+
 .brand-text small {
     display: block;
     width: 100%;
@@ -725,7 +725,7 @@ label {
     }
 }
 
-/* Shared homepage identity and display controls; booking layout stays intact. */
+
 .brand {
     gap: 10px;
 }

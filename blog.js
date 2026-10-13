@@ -1,4 +1,4 @@
-/* Standalone blog behavior. Header controls are initialized once below. */
+
 document.addEventListener("DOMContentLoaded", () => {
     "use strict";
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdownButton = document.getElementById("homeDropdownButton");
     const dropdown = dropdownButton?.closest(".nav-dropdown");
 
-    // Matches the mobile navigation breakpoint in blog.css.
+
     const desktopMedia = window.matchMedia("(min-width: 1251px)");
 
     function refreshIcons() {
@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             localStorage.setItem(key, value);
         } catch {
-            // Controls continue working when storage is unavailable.
+
         }
     }
 
-    /* THEME */
+
 
     function setTheme(theme) {
         const selectedTheme = theme === "dark" ? "dark" : "light";
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     });
 
-    /* TEXT DIRECTION */
+
 
     function setDirection(direction) {
         const selectedDirection = direction === "rtl" ? "rtl" : "ltr";
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setDirection(root.getAttribute("dir") === "rtl" ? "ltr" : "rtl");
     });
 
-    /* ACTIVE NAVIGATION */
+
 
     const currentPage =
         window.location.pathname.split("/").pop()?.toLowerCase() ||
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-    /* HOME DROPDOWN */
+
 
     function closeDropdown() {
         dropdown?.classList.remove("open");
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dropdownButton.setAttribute("aria-expanded", String(isOpen));
     });
 
-    /* MOBILE NAVIGATION */
+
 
     function setMobileMenu(isOpen) {
         if (!mainNav) return;
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setMobileMenu(false);
     });
 
-    /* FOOTER YEAR */
+
 
     const footerYear = document.getElementById("footerYear");
 
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
         footerYear.textContent = new Date().getFullYear();
     }
 
-    /* IMAGE FALLBACKS */
+
 
     document.querySelectorAll("img[data-fallback]").forEach((image) => {
         function useFallback() {
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    /* Progressive enhancement: content remains visible if JS is unavailable. */
+
     const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
     const revealTargets = document.querySelectorAll(
         ".section-header, .about-visual, .about-content, .board-row, " +
@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
     refreshIcons();
 });
 
-/* Journal-only enhancements */
+
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
   const body = document.body;

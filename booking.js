@@ -1,11 +1,11 @@
-/* Standalone Wave&Craft booking request page. No booking or payment service is connected. */
+
 (() => {
     "use strict";
-    // Contact address from home.js. Verify this address before publishing.
+
     const SHOP_EMAIL = "hello@wavecraft.com";
-    // Indicative sizes and rate, not live inventory. Replace with your rental catalog.
-    // Home advertises full-day rentals FROM $59. Each started 24h period is
-    // estimated at that rate here; the team must quote actual rates and offers.
+
+
+
     const boards = {
         cruiser: { name: "Coastal Cruiser", type: "Everyday Funboard", size: "7′2″", description: "Easy paddling and a smooth ride across changing conditions.", rate: 59, color: "#00A6A6" },
         runner: { name: "Ocean Runner", type: "Performance Shortboard", size: "6′0″", description: "Fast response for confident turns and clean lines.", rate: 59, color: "#FF694A" },
@@ -18,7 +18,7 @@
     const dateIds = ["pickupDate", "pickupTime", "returnDate", "returnTime"];
     const money = value => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(value);
     const read = (key, fallback) => { try { return localStorage.getItem(key) || fallback; } catch { return fallback; } };
-    const save = (key, value) => { try { localStorage.setItem(key, value); } catch { /* Preferences still work for this visit. */ } };
+    const save = (key, value) => { try { localStorage.setItem(key, value); } catch {   } };
     function setTheme(value) {
         const dark = value === "dark";
         root.dataset.theme = dark ? "dark" : "light";
@@ -42,8 +42,8 @@
     logo.addEventListener("error", () => { logo.hidden = true; });
     if (logo.complete && !logo.naturalWidth) logo.hidden = true;
 
-    // Inline SVG board artwork has no network dependency. A custom photo can be
-    // assigned below; if it fails, this embedded illustration is the fallback.
+
+
     const originalArtwork = $("boardImage").src;
     $("boardImage").addEventListener("error", () => {
         if ($("boardImage").src !== originalArtwork) $("boardImage").src = originalArtwork;
@@ -67,7 +67,7 @@
     function parseDate(date, time) {
         if (!date || !time) return null;
         const result = new Date(`${date}T${time}`);
-        // Reject invalid dates and local clock times skipped by daylight saving.
+
         if (!Number.isFinite(result.getTime()) || localDate(result) !== date || `${String(result.getHours()).padStart(2, "0")}:${String(result.getMinutes()).padStart(2, "0")}` !== time) return null;
         return result;
     }

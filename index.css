@@ -1,6 +1,4 @@
-/* =====================================================
-   VARIABLES AND GLOBAL STYLES
-===================================================== */
+
 
 :root {
     --font-family: "Outfit", system-ui, -apple-system, sans-serif;
@@ -171,7 +169,7 @@ p {
     transform: translate(3px, -3px);
 }
 
-/* BUTTONS */
+
 
 .button {
     display: inline-flex;
@@ -226,9 +224,7 @@ p {
     color: #fff;
 }
 
-/* =====================================================
-   HEADER AND LARGER CENTERED TAGLINE
-===================================================== */
+
 
 .site-header {
     position: fixed;
@@ -287,7 +283,7 @@ p {
     color: var(--secondary);
 }
 
-/* Larger tagline centered directly beneath the name. */
+
 .brand-text small {
     display: block;
     width: 100%;
@@ -447,7 +443,7 @@ p {
 .mobile-toggle {
     display: none;
 }
-/* Header buttons: secondary-color hover */
+
 .site-header .login-button,
 .site-header .direction-button,
 .site-header .icon-button {
@@ -458,7 +454,7 @@ p {
         box-shadow 0.25s ease;
 }
 
-/* Rent a Board */
+
 .site-header .login-button:hover,
 .site-header .login-button:focus-visible {
     background-color: var(--secondary);
@@ -466,7 +462,7 @@ p {
     box-shadow: 0 6px 18px rgba(255, 105, 74, 0.25);
 }
 
-/* RTL and light/dark mode buttons */
+
 .site-header .direction-button:hover,
 .site-header .direction-button:focus-visible,
 .site-header .icon-button:hover,
@@ -477,7 +473,7 @@ p {
     box-shadow: 0 6px 18px rgba(255, 105, 74, 0.25);
 }
 
-/* Theme icon inherits the hover color */
+
 .site-header .icon-button svg {
     stroke: currentColor;
 }
@@ -490,9 +486,7 @@ p {
     }
 }
 
-/* =====================================================
-   HERO
-===================================================== */
+
 
 .wc-hero {
     position: relative;
@@ -667,9 +661,7 @@ p {
     line-height: 1;
 }
 
-/* =====================================================
-   ABOUT
-===================================================== */
+
 
 .about-grid,
 .lessons-grid,
@@ -743,9 +735,7 @@ p {
     line-height: 1.6;
 }
 
-/* =====================================================
-   SHOP
-===================================================== */
+
 
 .shop-section {
     background: var(--bg-alt);
@@ -843,9 +833,7 @@ p {
     letter-spacing: 0.06em;
 }
 
-/* =====================================================
-   RENTALS
-===================================================== */
+
 
 .rental-section {
     position: relative;
@@ -994,9 +982,7 @@ p {
     border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* =====================================================
-   LESSONS
-===================================================== */
+
 
 .lessons-grid {
     align-items: stretch;
@@ -1130,9 +1116,7 @@ p {
     line-height: 1.5;
 }
 
-/* =====================================================
-   COMPACT FINAL CTA
-===================================================== */
+
 
 .final-cta-section {
     padding-block: 40px;
@@ -1199,10 +1183,7 @@ p {
     letter-spacing: 0.06em;
 }
 
-/* =====================================================
-   FOOTER
-   Compact columns with aligned headings and consistent link spacing
-===================================================== */
+
 
 .site-footer {
     background: var(--footer-bg);
@@ -1267,7 +1248,7 @@ p {
     gap: 28px;
 }
 
-/* Content-sized columns. */
+
 .footer-column {
     display: flex;
     flex-direction: column;
@@ -1278,7 +1259,7 @@ p {
     padding: 0;
 }
 
-/* Identical heading height and spacing. */
+
 .footer-column h3 {
     flex-shrink: 0;
     min-height: 28px;
@@ -1290,7 +1271,7 @@ p {
     line-height: 28px;
 }
 
-/* Consistent spacing without stretching the footer. */
+
 .footer-links,
 .footer-contact-list {
     display: flex;
@@ -1359,9 +1340,7 @@ p {
     gap: 22px;
 }
 
-/* =====================================================
-   RESPONSIVE NAVIGATION
-===================================================== */
+
 
 @media (max-width: 1250px) {
     .main-nav {
@@ -1830,7 +1809,7 @@ p {
 }
 
 
-/* Shared CTA colors across every section. Dark ink keeps both brand fills legible. */
+
 .button, .login-button, .rental-button, .text-link, .board-action a {
     display: inline-flex;
     align-items: center;
@@ -1889,7 +1868,7 @@ p {
 .footer-contact-list { gap: 10px; }
 .footer-links { gap: 6px; }
 
-/* A new destination in place of the contact form. */
+
 .surf-style-section { background: var(--bg-alt); }
 .surf-style-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .surf-style-card {
@@ -1914,7 +1893,7 @@ p {
 .surf-style-card p { margin-bottom: 26px; }
 .surf-style-card .button { margin-top: auto; }
 
-/* Smooth pointer and keyboard feedback, with no layout shifts. */
+
 .about-feature, .board-row, .rental-option, .lesson, .surf-style-card,
 .wc-hero-card, .final-cta-card {
     transition: transform .35s ease, box-shadow .35s ease,
